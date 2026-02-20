@@ -3,3 +3,4 @@
 ---
 
 - [[smit\|smit]]
+- [[sqm\|sqm]]
