@@ -11,7 +11,7 @@ dg-publish: true
 
 
 
-1.Define IT Service Management (ITSM). Explain how ITSM enables value creation using an example of an Indian food delivery platform like Zomatos
+1.Define IT Service Management (ITSM). Explain how ITSM enables value creation using an example of an Indian food delivery platform like Zomatoss
 
 ## **Definition of IT Service Management (ITSM)**
 
