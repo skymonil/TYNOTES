@@ -9,7 +9,7 @@ tags: [gardenEntry]
 
 ---
 
-- [SMIT](smit)
+- [[smit\|smit]]
 - [SQM](sqm)
 
 d
