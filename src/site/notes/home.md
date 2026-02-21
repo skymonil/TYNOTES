@@ -4,5 +4,5 @@
 
 
 
-- [SMIT](smit)
-- [SQM](sqm)
+- [SMIT](/TYNOTES/smit/)
+- [SQM](/TYNOTES/sqm/)
