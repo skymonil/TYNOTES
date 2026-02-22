@@ -6,3 +6,5 @@
 
 - [SMIT](/TYNOTES/smit/)
 - [SQM](/TYNOTES/sqm/)
+- [BIA](/TYNOTES/bia/)
+- [IS](/TYNOTES/sqm/)
