@@ -19,7 +19,7 @@
     - A luxury car’s smooth ride and premium interior (feeling of excellence).
     - Smartphone interface being intuitive and satisfying (user experience).
     - Starbucks coffee perceived as higher quality than a local café (brand influence).
-- **Key point**: Even if a product meets all specs, if the user isn’t satisfied, quality fails. In the end, quality is what the customer says it is, and exceeding emotional expectations can create brand evangelists and organic growth.
+- **Key point**: Even if a product meets all specs, if the user isn’t satisfied, quality fails. In the end, quality is what the customer says it is, and exceeding emotional expectations can create brand evangelists and organic growth..
 
 ### **Objective Quality: "It meets the specs"**
 
