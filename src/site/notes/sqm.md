@@ -13,7 +13,7 @@
 ![IMG-20260222-073450.png](/img/user/IMG-20260222-073450.png)
 ## **Subjective vs Objective Quality — Elaborated**
 
-### **Subjective Quality: "It feels right"**
+### **Subjective Quality: "It feels rights"**
 
 - **Customer-centric**: Based on individual perception and emotion. It is intangible and often tied to personal values, aesthetics, and brand reputation, making it harder to measure but crucial for customer retention.
 - **Relative**: What’s "quality" for one user may not be for another. This variability makes subjective quality a moving target influenced by trends, culture, social proof, and evolving consumer tastes.
