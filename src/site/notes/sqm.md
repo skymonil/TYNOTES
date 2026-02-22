@@ -8,7 +8,7 @@
 
 1.
 
-![IMG-20260222-070412.png](/img/user/IMG-20260222-070412.png)
+[![[IMG-20260222-070412.png](/img/user/!%5B%5BIMG-20260222-070412.png.md)]]
 ## **Subjective vs Objective Quality — Elaborated**
 
 ### **Subjective Quality: "It feels right"**
