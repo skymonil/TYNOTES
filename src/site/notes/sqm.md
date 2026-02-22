@@ -8,6 +8,7 @@
 
 1.
 
+![IMG-20260222-070412.png](/img/user/IMG-20260222-070412.png)
 ## **Subjective vs Objective Quality — Elaborated**
 
 ### **Subjective Quality: "It feels right"**
@@ -793,6 +794,7 @@ This is the standard, baseline approach. It focuses strictly on the valid bounda
 
 Robust Boundary value testing on 3 variables: Suppose we have 3 variables X, Y and Z to test
 The range of X: 0 to 100 The range of Y: 20 to 60 The range of Z: 80 to 100
+
 ![Pasted image 20260216133128.png](/img/user/Pasted%20image%2020260216133128.png)
 Test Cases: Total Test cases =(Number of variables * Number of testing points without nominal )+ (1 for Nominal) 
 These testing points are min-, min, min+, max- and max and max+19=(3*6)+1 
