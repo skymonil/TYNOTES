@@ -16,7 +16,7 @@
 ### **Subjective Quality: "It feels rights2"**
 
 - **Customer-centric**: Based on individual perception and emotion. It is intangible and often tied to personal values, aesthetics, and brand reputation, making it harder to measure but crucial for customer retention.
-- **Relative**: What’s "quality" for one user may not be for another. This variability makes subjective quality a moving target influenced by trends, culture, social proof, and evolving consumer tastes.
+- **Relative**: What’s "quality" for one user may not be for another. This variability makes subjective quality a moving target influenced by trends, culture, social proof, and evolving consumer tastes.2
 - **Examples**:
     - A luxury car’s smooth ride and premium interior (feeling of excellence).
     - Smartphone interface being intuitive and satisfying (user experience).
