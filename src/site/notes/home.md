@@ -4,7 +4,7 @@
 
 
 
-- [SMIT](/TYNOTES/smit/)
-- [SQM](/TYNOTES/sqm/)
-- [BIA](/TYNOTES/bia/)
+- [SMIT](/TYNOTES/SMIT/)
+- [SQM](/TYNOTES/SQM/)
+- [BIA](/TYNOTES/BIA/)
 - [IS](/TYNOTES/IS/)
