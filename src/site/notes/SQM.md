@@ -1759,7 +1759,8 @@ If you skip Verification, you build a buggy product. If you skip Validation, you
 ---
 
 Elaborate on the significance of verification workbench
-In software engineering, a **Verification Workbench** is a structured, standardized framework used to execute the verification process we just discussed.
+
+In software engineering, a **Verification Workbench** is a structured, standardized framework used to execute the verification process.
 
 Instead of developers or testers just casually reading through a requirement document or a piece of code and saying "looks good," a workbench treats the review process like a mini-manufacturing assembly line. It ensures that every single artifact (document, design, or code) goes through a rigorous, repeatable quality check before moving to the next phase of the SDLC.
 
@@ -1962,7 +1963,7 @@ Here are the four types of reviews and exactly how they contribute to the overal
 
 **4. Inspection (The Formal Audit)**
 
-- **What it is:** As we discussed earlier, this is the most rigorous type of review. It features strict roles (Moderator, Reader, Scribe), uses formal checklists, and the author is explicitly forbidden from leading or defending their work. Every defect is formally logged and tracked until it is fixed.
+- **What it is:**  this is the most rigorous type of review. It features strict roles (Moderator, Reader, Scribe), uses formal checklists, and the author is explicitly forbidden from leading or defending their work. Every defect is formally logged and tracked until it is fixed.
     
 - **Contribution to Quality:** It has the **highest defect detection rate** of any testing method. By removing bias and relying on strict checklists, it catches deep, complex bugs that informal reviews and automated tests almost always miss.
     
