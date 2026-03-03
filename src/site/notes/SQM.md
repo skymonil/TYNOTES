@@ -4,7 +4,7 @@
 
 # SQM
 
-
+# UNIT 1
 
 1.
 
@@ -606,7 +606,7 @@ Challenges in Testing
 - **Data Privacy and Test Data Management:** Creating realistic data for testing (like credit card numbers or medical records) without violating privacy laws (like GDPR) is difficult. Managing large, consistent datasets across multiple testing teams is a major logistical hurdle.
 ---
 
-UNIT 3
+# UNIT 3
 
 1.What is Static Testing & Dynamic Testing (Also Explain it's categories Namely WhiteBox and Blackbox)
 In software engineering, testing is divided into two primary phases: checking the code before it runs, and checking the application while it runs.
@@ -1151,7 +1151,7 @@ A standard decision table is divided into four distinct quadrants or sections, p
 | 10% Discount         |          | ✔        | ✔        |          |
 | No Discount          |          |          |          | ✔        |
 
-# 🔎 Explanation
+### 🔎 Explanation
 
 ### Rule 1:
 
@@ -1273,7 +1273,7 @@ if (x > 10) {
 
 ---
 
-# 🔹 Step 1: Identify Decision Points
+## 🔹 Step 1: Identify Decision Points
 
 There are 2 decision statements:
 
@@ -1284,7 +1284,7 @@ There are 2 decision statements:
 
 ---
 
-# 🔹 Step 2: Draw Logical Flow (Control Flow Graph)
+### #🔹 Step 2: Draw Logical Flow (Control Flow Graph)
 
 We can represent it logically like this:
 
@@ -1304,7 +1304,7 @@ Start
 
 ---
 
-# 🔹 Step 3: Identify All Independent Paths
+### 🔹 Step 3: Identify All Independent Paths
 
 Possible execution paths:
 
@@ -1324,7 +1324,7 @@ So total **3 independent paths**
 
 ---
 
-# 🔹 Step 4: Create Test Cases
+### 🔹 Step 4: Create Test Cases
 
 |Test Case|x|y|Expected Output|
 |---|---|---|---|
@@ -1336,7 +1336,7 @@ All paths covered ✅
 
 ---
 
-# 🔹 Step 5: Cyclomatic Complexity
+### 🔹 Step 5: Cyclomatic Complexity
 
 Formula:
 
@@ -1359,13 +1359,13 @@ Which matches number of independent paths = 3
 
 ---
 
-# 🎯 Final Definition for Exam
+### 🎯 Final Definition for Exam
 
 Path Testing is a white-box testing technique where all possible execution paths of a program are tested to ensure complete branch coverage.
 
 ---
 
-# 🔥 Difference: Path Testing vs Decision Table
+### 🔥 Difference: Path Testing vs Decision Table
 
 |Path Testing|Decision Table Testing|
 |---|---|
@@ -1688,7 +1688,7 @@ If you run a slice on a final output variable and discover that a massive block 
 
 ---
 
-UNIT 4
+# UNIT 4
 
 
 What is software Verificatinon & Validation, and why is it important
