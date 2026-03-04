@@ -280,8 +280,6 @@ A BI system is never truly "finished." As the business grows, the system must ad
 
 7. What are Open Loop Control and Closed Loop Control System. Explain with example
 
-Here is a clear breakdown of Open Loop and Closed Loop control systems, including how these concepts apply to both everyday objects and modern infrastructure architecture.
-
 ### What is a Control System?
 
 A control system manages, commands, directs, or regulates the behavior of other devices or systems. The fundamental difference between the two types comes down to one word: **Feedback**.
@@ -329,22 +327,6 @@ You set the AC to 22°C (Desired State). The AC turns on. A built-in thermometer
 Modern container orchestration is built entirely on closed-loop control systems. If you write a deployment manifest asking for 3 replicas of a Node.js microservice (Desired State), the Kubernetes controller constantly watches the cluster. If one of those pods suddenly crashes due to an Out of Memory (OOM) error, the actual state drops to 2. The controller detects this variance via its feedback loop and immediately spins up a new pod to bring the count back to 3.
 
 ---
-
-### Quick Comparison Summary
-
-|**Feature**|**Open Loop System**|**Closed Loop System**|
-|---|---|---|
-|**Feedback Mechanism**|None|Present|
-|**Error Correction**|Impossible (requires human intervention)|Automatic (self-correcting)|
-|**Complexity & Cost**|Low|High|
-|**Stability**|Generally stable|Can become unstable if feedback is flawed|
-|**Reliability**|Low (assumes perfect conditions)|High (adapts to changing conditions)|
-
----
-
-**Next Step:** The concept of the "Closed Loop" is the exact foundation of modern declarative infrastructure. Would you like to explore how tools like **ArgoCD** use closed-loop reconciliation to keep live environments perfectly synced with a Git repository?
-
----
 8.
 ## Difference between Open-Loop Control System and Closed-Loop Control System
 
@@ -370,6 +352,8 @@ Modern container orchestration is built entirely on closed-loop control systems.
 ---
 
 9.What are the phases of Decision Making Process of DSS
+
+A **DSS (Decision Support System)** is an interactive, computer-based information system designed to help managers and business professionals make decisions, especially when dealing with "unstructured" or "semi-structured" problems
 
 Here is the standard framework for the decision-making process within a Decision Support System (DSS).
 
@@ -432,7 +416,7 @@ Adopting a Decision Support System (DSS) fundamentally shifts how a business ope
 
 Here is a structured breakdown of the primary advantages an organization gains from implementing a DSS:
 
-### 1. Faster and More Efficient Decision-Making
+### 1. Faster  Decision-Making
 
 - **The Advantage:** A DSS automates the incredibly time-consuming process of gathering, cleaning, and formatting data from multiple departments.
     
@@ -477,11 +461,10 @@ Here is a structured breakdown of the primary advantages an organization gains f
 ---
 
 **11 Explain the phases to develop a Decision support system
-Developing a Decision Support System (DSS) follows a specialized version of the standard software development lifecycle. However, because human decision-making is complex and fluid, DSS development is highly **iterative**—meaning it relies heavily on building prototypes, getting user feedback, and constantly refining the system.
 
 Here are the six standard phases to develop a DSS:
 
-### 1. Planning and Problem Definition
+### 1.  Problem Definition
 
 Before writing any code or extracting any data, the development team must understand the exact business problem that needs solving.
 
@@ -490,7 +473,7 @@ Before writing any code or extracting any data, the development team must unders
 - **What happens here:** The team identifies the specific decisions the system will support (e.g., "We need a system to help us dynamically price airline tickets based on demand"). They conduct a feasibility study to ensure the organization has the budget, technology, and data available to actually build it.
     
 
-### 2. Analysis and Requirements Gathering
+### 2. Requirements Gathering
 
 This phase bridges the gap between the business managers (the end-users) and the IT team.
 
@@ -579,15 +562,6 @@ The corporate environment plays a massive role in DSS adoption.
     
 
 ---
-
-**Next Step:** We have mentioned the analytical tools that make a DSS so useful multiple times. Would you like me to explain how managers actually use **What-If Analysis**, **Goal-Seeking Analysis**, and **Sensitivity Analysis** to make their final choices?
-
-
-
-
-
----
-
 
 # UNIT  2
 
