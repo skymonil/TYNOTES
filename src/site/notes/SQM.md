@@ -608,7 +608,7 @@ Challenges in Testing
 
 # UNIT 3
 
-1.What is Static Testing & Dynamic Testing (Also Explain it's categories Namely WhiteBox and Blackbox)
+## 1.What is Static Testing & Dynamic Testing (Also Explain it's categories Namely WhiteBox and Blackbox)
 In software engineering, testing is divided into two primary phases: checking the code before it runs, and checking the application while it runs.
 
 
@@ -617,7 +617,6 @@ In software engineering, testing is divided into two primary phases: checking th
 
 Static testing is the process of evaluating software **without actually executing the code**. It is performed very early in the Software Development Life Cycle (SDLC) to catch defects in the foundational stages, making it highly cost-effective.
 
-+1
 
 - **Focus:** Examining the design documents, requirements, architecture, and raw source code.
     
@@ -632,7 +631,6 @@ Static testing is the process of evaluating software **without actually executin
 
 Dynamic testing involves **executing the software** to observe its behavior in real-time. It is performed after the code is written to validate that the application actually works as intended in a live or simulated environment.
 
-+1
 
 - **Focus:** Evaluating functional behavior, memory usage, CPU performance, and the overall user experience.
     
@@ -686,7 +684,7 @@ Would you like me to explain how to apply specific Black Box testing techniques,
 
 ---
 
-2.BOUNDARY VALUE ANALYSIS , PROS AND CONS
+## 2.BOUNDARY VALUE ANALYSIS , PROS AND CONS
 **Boundary Value Analysis (BVA)** is a Black Box testing technique based on the idea that bugs and errors are far more likely to occur at the extreme edges (boundaries) of an input range than in the center.
 
 Instead of randomly testing values in the middle of a range, BVA focuses exclusively on the minimum and maximum limits, as well as the values just inside and just outside those limits.
@@ -980,7 +978,7 @@ These two techniques are almost always used together:
     
 
 ---
-Compare Traditional Equivalence Testing & Improved Equivalence Testing. Provide Examples also
+## 8.Compare Traditional Equivalence Testing & Improved Equivalence Testing. Provide Examples also
 
 **Traditional Equivalence Testing** focuses strictly on the inputs. It looks at a single input field, reads the requirements for that field, and divides the possible data into valid and invalid groups.
 
@@ -1040,7 +1038,8 @@ An Improved Equivalence tester looks at every possible **Output** the system can
 
 ---
 
-What is State Transition Testing Explain with Example
+## 9.What is State Transition Testing Explain with Example
+
 **State Transition Testing** is a Black Box testing technique used when a system's behavior depends not just on the _current input_, but on the _history of past inputs_ (its "state").
 
 Unlike Equivalence Partitioning or Boundary Value Analysis, which treat every input as an isolated event, State Transition testing evaluates software that has a "memory." The exact same input will produce a completely different result depending on what state the system is currently in.
@@ -1109,7 +1108,8 @@ State Transition Testing forces the QA engineer to verify the "memory" of the ap
 
 ---
 
-What is decision Table based testing and Explain the components of a decision table
+## 10. What is decision Table based testing and Explain the components of a decision table
+
 **Decision Table Based Testing** (also known as Cause-Effect testing) is a Black Box testing technique used to test system behavior when different combinations of inputs result in different outcomes.
 
 While Boundary Value Analysis and Equivalence Partitioning are great for testing single input fields, Decision Tables are designed specifically for testing **complex business logic and rules** where multiple variables interact with each other.
@@ -1174,7 +1174,7 @@ Non-Premium + Amount ≤ 1000
 → No Discount
 
 ---
-What is Use Case Testing? Explain with an ATM Example
+## 11.What is Use Case Testing? Explain with an ATM Example
 
 **Use Case Testing** is a Black Box testing technique that validates the software from the end-user's perspective. Instead of testing isolated input fields (like Boundary Value Analysis) or internal memory (like State Transition Testing), it tests the **entire end-to-end journey** a user takes to achieve a specific goal.
 A use case is a description of a particular use of the system by an actor (a user of the system). Each use case describes the interactions the actor has with the system in order to achieve a specific task (or, at least, produce something of value to the user)
@@ -1241,7 +1241,7 @@ If you only tested the PIN pad (Equivalence Partitioning) or the withdrawal limi
 
 ---
 
-What is Path Testing
+## 12.What is Path Testing
 
 **Path Testing** is a structural, **White Box** testing technique used to ensure that every possible logical route (or "path") through a program's source code is executed at least once during testing.
 
@@ -1374,16 +1374,13 @@ Path Testing is a white-box testing technique where all possible execution paths
 |Uses control flow graph|Uses tabular representation|
 
 ---
-
-
-
----
-Explain the process to design test cases in Path Testing
+## 13.Explain the process to design test cases in Path Testing
 ses using this technique, four steps are followed:
 1. Construct the Control Flow Graph
 2. Compute the Cyclomatic Complexity of the Graph
 3. Identify the Independent Paths
 4. Design Test cases from Independent Paths
+
 Path Testing is a structural, White Box testing technique where the goal is to execute every possible route through a piece of code. The four-step process you outlined is the exact, standard methodology used by software engineers to achieve 100% path coverage.
 
 Here is the breakdown of how each step works in practice:
@@ -1434,7 +1431,8 @@ The final step is turning those theoretical paths into actual, executable tests.
 
 ---
 
-What is Data Flow testing explain it's type and pros and cons
+## 14.What is Data Flow testing explain it's type and pros and cons
+
 **Data Flow Testing** is a structural, **White Box** testing technique. While Path Testing (Control Flow) focuses on the _routes_ the logic takes through the code, Data Flow Testing focuses on the lifecycle of the **variables** traveling along those routes.
 
 The goal is to track a specific piece of data from the moment it is created to the moment it is destroyed, ensuring it is used correctly at every step. It specifically hunts for bugs like using a variable before it is initialized, or assigning a value to a variable but never actually using it.
@@ -1497,7 +1495,7 @@ The "types" are actually different levels of **coverage strategies**. Testers ch
 
 
 
-Explain Methods for Unit Testing and Test Coverage Metrics (Unit Testing Strategies)
+## 15.Explain Methods for Unit Testing and Test Coverage Metrics (Unit Testing Strategies)
 **Unit Testing** is the first line of defense in software quality. It involves taking the smallest piece of testable code usually a single function or method and verifying that it works perfectly in complete isolation from the rest of the application.
 
 Here is a detailed breakdown of the strategies used to write unit tests, followed by the metrics used to measure how effective those tests actually are.
@@ -1553,7 +1551,7 @@ Here are the standard metrics you need to know:
 
 ---
 
-Explain how Testing Throughout the SDLC (Software Development Life Cycle)** to see how these unit tests fit into the bigger picture of building an application?
+## 16.Explain how Testing Throughout the SDLC (Software Development Life Cycle)** to see how these unit tests fit into the bigger picture of building an application?
 
 
 Testing throughout the Software Development Life Cycle (SDLC) is the practice of ensuring quality is built into an application from the very first brainstorming session, rather than just checking for bugs right before release.
@@ -1598,7 +1596,7 @@ As developers write code and build the system, testing expands outward in four d
 
 ---
 
-### The Importance of Early Testing ("Shift-Left")
+##  17.The Importance of Early Testing ("Shift-Left")
 
 Traditionally, testing was done at the very end of the SDLC (the Waterfall approach). Today, the industry standard is the **"Shift-Left" approach**, which literally means shifting the testing phase to the left side of the project timeline.
 
@@ -1618,7 +1616,7 @@ Here is why early testing is the most critical concept in modern software develo
 ---
 
 
-How does Slice Based Testing Work and why is it beneficial for debugging
+## 16.How does Slice Based Testing Work and why is it beneficial for debugging
 **Slice-Based Testing** (or Program Slicing) is a highly targeted, **White Box** testing technique. While traditional testing looks at the entire program or whole functions at once, Slice-Based Testing takes a surgical approach. It cuts out a specific "slice" of the source code that affects a single variable at a specific point in time, ignoring everything else.
 
 Originally developed by computer scientist Mark Weiser, it is heavily related to the **Data Flow Testing** we discussed earlier, but it is specifically designed to make finding and fixing bugs (debugging) much faster.
@@ -2054,7 +2052,7 @@ When a test fails in a validation workbench, the "Output" phase requires a forma
 
 ---
 
-Explain Levels of Validation Testing
+## Explain Levels of Validation Testing
 Validation testing involves actually executing the software to ensure it behaves correctly. It is structured in levels, starting from the smallest lines of code and expanding outward until the entire application is tested by the end-user.
 
 Here is the explanation of each level of Validation testing:
@@ -2345,6 +2343,7 @@ These activities involve actually running the code to see how it behaves.
     
 
 ---
+NOTE: BELOW CONTENT IS OMITTED FOR EXAMS
 
 Explain GUI Testing it's pros and cons
 **GUI (Graphical User Interface) Testing** is the process of testing the visual elements of a software application to ensure they function correctly and look right to the end-user.
