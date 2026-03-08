@@ -47,7 +47,7 @@ Meet objective standards (so the product works correctly) + exceed subjective ex
 
 ---
 
-2. Customer-centric views of quality
+## 2. Customer-centric views of quality
 
 **Customer-based quality** means that quality is defined by the customer's perception, needs, and satisfaction—**not** by internal standards, specifications, or industry benchmarks.
 
@@ -121,7 +121,7 @@ A customer-based definition of quality moves beyond checklists and measurements.
 
 ---
 
-3.CORE COMPONENTS OF QUALITY
+## 3.CORE COMPONENTS OF QUALITY
 
 ### **1. Product Features**
 
@@ -198,7 +198,7 @@ When exceeded → customer is **delighted**, leading to loyalty and repeat purch
 
 ---
 
-4.Customer's View of Quality:
+## 4.Customer's View of Quality:
 
 Customer's view of quality of product interprets customer requirements
 and expectation for getting a better product at defined schedule, cost and
@@ -219,7 +219,7 @@ Customer expectations are of two types: **expressed** (documented formally) an
 
 —————
 
-5.SUPPLIERS VIEW OF QUALITY
+## 5.SUPPLIERS VIEW OF QUALITY
 
 Supplier is a development organisation in the context of software
 application development, Supplier has some expectations or needs, which
@@ -238,7 +238,7 @@ Doing things right the first time avoids waste, reduces costs, and increases pro
 
 ---
 
-6.CONTINUAL (CONTINUOUS) IMPROVEMENT
+## 6.CONTINUAL (CONTINUOUS) IMPROVEMENT
 CYCLE
 
 Continual (Continuous) improvement cycle is based on systematic
@@ -264,7 +264,7 @@ If **deviations** (positive or negative) are observed during the 'Check' phase, 
 
 ---
 
-1. Quality Principles of Total Quality Management (TQM)
+## 7. Quality Principles of Total Quality Management (TQM)
 
 ---
 
@@ -292,7 +292,7 @@ Continuously **improve every process**—including planning, production, service
 
 ---
 
-QUALITY MANAGEMENT THROUGH STATISTICAL PROCESS CONTROL
+## 8.QUALITY MANAGEMENT THROUGH STATISTICAL PROCESS CONTROL
 
 SPC (Statistical Process Control) is a quality control method that uses statistical tools to monitor, control, and improve a process by analyzing data in real-time. It aims to:
 
@@ -306,7 +306,7 @@ Use control charts to visually track process performance over time
 
 ---
 
-QUALITY CONTROL
+## 9.QUALITY CONTROL
 
 Quality Control involves inspecting products against defined standards to assess process outcomes. Its goal is to remove defects, improve process capability, lower costs, and enhance customer satisfaction. By measuring deviations from planned targets, organizations can take corrective actions to minimize variations.
 
@@ -321,6 +321,222 @@ BENCHMARKING AND METRICS
 **Benchmarking** in Quality Function Deployment (QFD) uses measurable metrics to evaluate product quality against standards. Key variables include price, delivery time, customer satisfaction, defects, and features. Metrics track product capabilities, process performance, and outcomes. Organizations must establish consistent metrics from strategic plans and benchmark partners for effective comparison and improvement.
 
 ---
+
+## 10. Differentiate between tools and techniques using examples
+
+In Software Quality Management (SQM), the terms **"Tool"** and **"Technique"** are frequently used together, but they represent two entirely completely different parts of the problem-solving process.
+
+The simplest way to remember the difference is:
+
+- **A Technique is the _How_:** It is the cognitive process, methodology, or logic used to perform a task. It exists in the human mind or as a written procedure.
+    
+- **A Tool is the _What_:** It is the software, instrument, or automation used to actually execute that technique.
+    
+
+Here is a detailed breakdown of how they differ, followed by concrete examples in software development.
+
+### Core Differences
+
+|**Feature**|**Technique**|**Tool**|
+|---|---|---|
+|**Definition**|A systematic procedure or method used to accomplish a specific QA task.|A software application, script, or framework used to perform or automate the task.|
+|**Nature**|Conceptual, logical, and procedural.|Digital, executable, and tangible (within a computer).|
+|**Dependency**|Can be executed manually without a tool (though it might be slow).|Cannot function without a technique guiding its use. A tool without a technique is useless.|
+|**Requirement**|Requires human intelligence, domain knowledge, and analytical skills.|Requires installation, configuration, and operational training.|
+
+---
+
+### Examples in Software Quality Management
+
+To clearly see the difference, look at how a QA engineer pairs a technique with a tool to accomplish a specific quality goal.
+
+**1. Code Quality and Reviews**
+
+- **The Technique (Peer Review / Inspection):** The formal process of having a second developer read through newly written code line-by-line to check for logic errors, security flaws, and adherence to company coding standards.
+    
+- **The Tool (GitHub Pull Requests / SonarQube):** The actual software platform where the code is hosted, allowing the reviewer to leave digital comments on specific lines, or the automated static analysis software (SonarQube) that scans the code for syntax errors.
+    
+
+**2. Software Testing Design**
+
+- **The Technique (Boundary Value Analysis):** The mathematical logic used by a tester to determine _what_ to test. If a text box accepts ages 18 to 60, the technique dictates that the tester should only check the exact boundaries: 17, 18, 60, and 61, rather than testing every single number in between.
+    
+- **The Tool (Selenium / JUnit):** The automation framework used to actually write the script that types "17" and "61" into the text box and clicks the submit button 1,000 times a second.
+    
+
+**3. Defect Management and Resolution**
+
+- **The Technique (Root Cause Analysis / The "5 Whys"):** The analytical method of asking "Why?" multiple times after a software crash to get past the surface-level symptom and find the actual underlying architectural flaw that caused it.
+    
+- **The Tool (Jira / Bugzilla):** The ticketing database used to track the bug, assign it to a developer, and document the findings of the root cause analysis so the team has a historical record.
+    
+
+---
+
+## 11. Describe the cultural changes required for Quality Improvement
+
+Transforming an organization's approach to quality requires moving away from isolated, ad-hoc fixes and establishing a structured, management-led environment. To achieve lasting Quality Improvement, the culture must shift across several core areas.
+
+Here is an expansion of the specific cultural changes required:
+
+### 1. Fostering Cross-Functional Collaboration
+
+Quality can no longer be viewed as the sole responsibility of a single person or a siloed testing department.
+
+- **The Cultural Shift:** The organization must actively break down departmental barriers by instituting **cross-functional working groups** (often called Quality Circles).
+    
+- **The Impact:** When individuals from different functions (e.g., development, testing, management, and operations) collaborate, it creates a shared, organizational-wide awareness of customer needs and process measurements. This establishes the mindset that improving the development and testing process is a unified team effort, ultimately leading to higher customer satisfaction.
+    
+
+### 2. Embracing Data-Driven Prioritization
+
+A culture of quality does not mean blindly attempting to fix every single flaw in the organization simultaneously.
+
+- **The Cultural Shift:** Teams must adopt an analytical, pragmatic approach to problem-solving. They must accept that resources and investments are finite.
+    
+- **The Impact:** Instead of operating on intuition, the culture shifts to using formal prioritization techniques like **Pareto Analysis** (focusing on the 20% of defects causing 80% of the issues) and **Cost-Benefit Analysis**. This ensures the organization is investing its effort where it will derive the maximum possible benefit.
+    
+
+### 3. Driving Behavior Through Measurable Goals
+
+Vague directives like "do better" do not change a culture.
+
+- **The Cultural Shift:** The organization must normalize the practice of setting strict, measurable goals across all areas and levels.
+    
+- **The Impact:** By establishing "stretched targets"—goals that push the team slightly beyond their current capabilities—the organization continuously reaches for a competitive advantage. These goals must be directly tied to actual customer expectations, ensuring the team's daily work is aligned with what the market actually values.
+    
+
+### 4. Cultivating a Culture of Recognition
+
+If management demands higher quality but only ever discusses velocity or deadlines, the culture will not change.
+
+- **The Cultural Shift:** Leadership must actively demonstrate their commitment to quality by publicly recognizing and rewarding the teams and individuals who achieve these new quality goals.
+    
+- **The Impact:** This creates a positive feedback loop. Recognition significantly boosts employee morale and introduces a healthy, positive competition among different functional teams, acting as a catalyst for dramatic, organization-wide improvements.
+    
+
+### 5. Committing to Continuous, Cyclical Improvement
+
+Quality improvement is not a one-time project with a definitive end date.
+
+- **The Cultural Shift:** The organization must embed the habit of repeating the quality improvement cycle indefinitely.
+    
+- **The Impact:** Once a stretched goal is met, the culture dictates that a new, higher goal is immediately set for the next phase. By constantly evaluating and aligning short-term achievements with long-term organizational visions, the company ensures its standards never stagnate.
+    
+
+---
+
+WATERFALL MODEL
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240312115941/waterfall-model.gif)
+
+The Waterfall Model is a traditional, linear approach to software development. It is one of the earliest models introduced in Software Development Life Cycle (SDLC). In this model, the project flows sequentially through predefined phases, and each phase must be completed before moving to the next.
+
+# Phases of Waterfall Model
+
+The Waterfall Model has six phases which are:
+
+1. **Requirements:** The first phase involves gathering requirements from stakeholders and analyzing them to understand the scope and objectives of the project.
+2. **Design:** Once the requirements are understood, the design phase begins. This involves creating a detailed design document that outlines the software architecture, user interface, and system components.
+3. **Development:** The Development phase involves coding the software based on the design specifications. This phase also includes unit testing to ensure that each component of the software is working as expected.
+4. **Testing:** In the testing phase, the software is tested as a whole to ensure that it meets the requirements and is free from defects.
+5. **Deployment:** Once the software has been tested and approved, it is deployed to the production environment.
+6. **Maintenance:** The final phase of the Waterfall Model is maintenance, which involves fixing any issues that arise after the software has been deployed and ensuring that it continues to meet the requirements over time.
+
+Advantages of Waterfall Model
+
+### **Advantages of the Waterfall Model**
+
+1. **Simplicity:** Easy to understand and manage due to its linear approach.
+2. **Documentation:** Comprehensive documentation in every phase ensures clarity.
+3. **Disciplined Process:** Each phase is well-defined, reducing the risk of overlapping tasks.
+4. **Ideal for Stable Requirements:** Works well for projects where requirements are clear and unlikely to change.
+
+# Disadvantages of Waterfall Model
+
+The Classical Waterfall Model suffers from various shortcomings we can’t use it in real projects, but we use other software development lifecycle models which are based on the classical waterfall model. Below are some major drawbacks of this model.
+
+- **No Feedback Path:** In the classical waterfall model evolution of software from one phase to another phase is like a waterfall. It assumes that no error is ever committed by developers during any phase. Therefore, it does not incorporate any mechanism for error correction.
+- **Difficult to accommodate Change Requests:** This model assumes that all the customer requirements can be completely and correctly defined at the beginning of the project, but the customer’s requirements keep on changing with time. It is difficult to accommodate any change requests after the requirements specification phase is complete.
+- **No Overlapping of Phases:** This model recommends that a new phase can start only after the completion of the previous phase. But in real projects, this can’t be maintained. To increase efficiency and reduce cost, phases may overlap.
+- **Limited Flexibility:** The Waterfall Model is a rigid and linear approach to software development, which means that it is not well-suited for projects with changing or uncertain requirements. Once a phase has been completed, it is difficult to make changes or go back to a previous phase.
+- **Limited Stakeholder Involvement:** The Waterfall Model is a structured and sequential approach, which means that stakeholders are typically involved in the early phases of the project (requirements gathering and analysis) but may not be involved in the later phases [**(implementation, testing, and deployment).**](https://www.geeksforgeeks.org/post-deployment-testing-in-software-testing/)
+- **Late Defect Detection:** In the Waterfall Model, testing is typically done toward the end of the development process. This means that defects may not be discovered until late in the development process, which can be expensive and time-consuming to fix.
+- **Lengthy Development Cycle:** The Waterfall Model can result in a lengthy development cycle, as each phase must be completed before moving on to the next. This can result in delays and increased costs if requirements change or new issues arise.
+
+---
+
+PROTOTYPING MODEL
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240312130106/prototype-model-concepts.gif)
+
+Prototyping is defined as the process of developing a working replication of a product or system that has to be engineered This model is used when the customers do not know the exact project requirements beforehand. In this model, a prototype of the end product is first developed, tested, and refined as per customer feedback repeatedly till a final acceptable prototype is achieved which forms the basis for developing the final product.
+
+**Steps of Prototyping Model**
+
+**Step 1: Requirement Gathering and Analysis:** This is the initial step in designing a prototype model. In this phase, users are asked about what they expect or what they want from the system.
+
+**Step 2: Quick Design:** This is the second step in the Prototyping Model. This model covers the basic design of the requirement through which a quick overview can be easily described.
+
+**Step 3: Build a Prototype:** This step helps in building an actual prototype from the knowledge gained from prototype design.
+
+**Step 4: Initial User Evaluation: The prototype is presented to users, who can be customers, stakeholders, or end-users. They interact with it and provide feedback on what they like, dislike, and what needs improvement, focusing on identifying strengths and weaknesses in the current design.**
+
+**Step 5: Refining Prototype:** If any feedback is given by the user, then improving the client’s response to feedback and suggestions, the final system is approved.
+
+**Step 6: Implement Product and Maintain:** This is the final step in the phase of the Prototyping Model where the final system is tested and distributed to production, here the program is run regularly to prevent failures.
+
+---
+
+ITERATIVE MODEL
+
+![IMG-20260308-085430.png](/img/user/IMG-20260308-085430.png)
+
+The **Iterative Model** in software engineering is a development approach where the software is built and improved **incrementally** through multiple iterations (or cycles). Instead of completing the entire project in one go, the development process is broken down into smaller parts that are repeatedly developed, tested, and refined.
+
+Each iteration produces a working version of the software with more features or improvements, gradually progressing toward the final product.
+
+### Phases of iterative model
+
+1. **Requirement gathering & analysis:** In this phase, all the software requirements of the customer are collected and it is analyzed whether those requirements can be meet or not. Besides, it is also checked whether this project will not go beyond our budget.
+2. **Design**: In this phase the design of software is prepared. For this, various diagrams like Data Flow diagram, class diagram, activity diagram, state transition diagram, etc. are used.
+3. **Implementation**: Now the design of software is implemented in coding through various programming languages. We also call this coding phase.
+4. **Testing**: After the coding of the software is done, it is now tested so that the bugs and errors present in it can be identified. To do this, various testing techniques like performance testing, security testing, requirement testing, stress testing, etc. are done.
+5. **Deployment**: Finally the software is given to the customer. After this the customer starts using that software in his work environment.
+6. **Review**: After the software is deployed in its work environment, it is reviewed. If any error/bug is found or any new requirements come in front of developer, then again these phases are repeated with new iteration and a new version is developed.
+7. **Maintenance**: In this phase we look at customer feedback, solve problems, fix errors, update software, etc.
+
+**Advantages of the Iterative Model**
+
+1. The most important advantage of this approach is that software is built in iterations, allowing developers and testers to identify design or functionality faults as quickly as possible, allowing them to take corrective actions within a limited budget. Here is a list of advantages of this SDLC model:
+    
+2. A working product is produced much early in the lifecycle, unlike the waterfall model, where a working product is available only at the end of the lifecycle.
+    
+3. We can detect errors and bugs at an early stage and prevent them from flowing downwards. We test the output of every iteration and do not let bugs from the previous iteration propagate to the next iteration.
+    
+4. Changing the requirements does not incur much cost in this model, although it may not always be possible to accommodate new requirements due to system structure and design constraints.
+    
+5. Customer feedback can be incorporated in every iteration and implemented quickly.
+    
+6. In this model, less time is spent on documenting and more time on designing and developing.
+    
+
+**Disadvantages of the Iterative Model**
+
+1. Although the iterative model is hugely beneficial, it has various faults and drawbacks. The biggest one is system structure or design issues may arise since not all requirements are collected at the advent of the entire life cycle. The disadvantages of the iterative model are listed below:
+    
+2. Problems relating to the system architecture can arise because all the requirements are not gathered upfront. Design can be changed repeatedly because of defective requirements gathered in the first phase.
+    
+3. Although the cost of change is lower, it is not well suited to frequently shifting requirements.
+    
+4. It is not a good option for small projects as it may not be realistic or possible to break down a small project into smaller parts.
+    
+5. It is more resource-intensive than the waterfall model. To avoid risk, this strategy necessitates the use of highly trained resources for the project's analysis.
+    
+6. The entire procedure is challenging to manage.
+
+
+
 
 MODULE 2
 
@@ -1604,7 +1820,7 @@ Here is why early testing is the most critical concept in modern software develo
 
 - **The Exponential Cost of Defects:** A bug is significantly cheaper to fix the earlier you find it.
     
-    - If a logical flaw is found during the **Requirements phase**, it costs almost nothing to fix—you just rewrite a sentence in a document.
+    - If a logical flaw is found during the **Requirements phase**, it costs almost nothing to fix you just rewrite a sentence in a document.
         
     - If it is found during **Unit Testing**, a developer spends 10 minutes rewriting a function.
         
@@ -1617,6 +1833,7 @@ Here is why early testing is the most critical concept in modern software develo
 
 
 ## 16.How does Slice Based Testing Work and why is it beneficial for debugging
+
 **Slice-Based Testing** (or Program Slicing) is a highly targeted, **White Box** testing technique. While traditional testing looks at the entire program or whole functions at once, Slice-Based Testing takes a surgical approach. It cuts out a specific "slice" of the source code that affects a single variable at a specific point in time, ignoring everything else.
 
 Originally developed by computer scientist Mark Weiser, it is heavily related to the **Data Flow Testing** we discussed earlier, but it is specifically designed to make finding and fixing bugs (debugging) much faster.
@@ -1689,7 +1906,8 @@ If you run a slice on a final output variable and discover that a massive block 
 # UNIT 4
 
 
-What is software Verificatinon & Validation, and why is it important
+## 1.What is software Verificatinon & Validation, and why is it important
+
 **Verification and Validation (V&V)** are two independent but deeply interconnected processes used to ensure that a software system meets all of its requirements and fulfills its intended purpose.
 
 In software engineering, they are often confused, but they answer two completely different questions.
@@ -1756,7 +1974,7 @@ If you skip Verification, you build a buggy product. If you skip Validation, you
 
 ---
 
-Elaborate on the significance of verification workbench
+## 2.Elaborate on the significance of verification workbench
 
 In software engineering, a **Verification Workbench** is a structured, standardized framework used to execute the verification process.
 
@@ -1807,7 +2025,7 @@ The output of one workbench (e.g., the Requirements Workbench) becomes the exact
 
 ---
 
-Explain Each Verification method listed below and also it's pros and cons
+## 3.Explain Each Verification method listed below and also it's pros and cons
 These four methods are the specific **Static Testing** techniques used inside the Verification Workbench we just discussed. They represent a spectrum of formality, starting from the most casual check to the most rigorous audit.
 
 Here is a breakdown of how each method works, along with its pros and cons.
@@ -1890,8 +2108,8 @@ This is the most rigorous, structured, and heavily documented verification metho
 
 ---
 
-Explain the Roles involved in Formal Inspection 
-### . The Author (The Creator)
+## 4.Explain the Roles involved in Formal Inspection 
+### 1. The Author (The Creator)
 
 - **Responsibility:** To be present, listen, and clarify the _intent_ behind the document or code if the team gets confused.
     
@@ -1927,14 +2145,13 @@ Explain the Roles involved in Formal Inspection
 
 ---
 
-What are the different types of reviews in testing Lifecycle and how do they contribute to software quality
+## 5.What are the different types of reviews in testing Lifecycle and how do they contribute to software quality
+
 In the Software Testing Life Cycle (STLC), reviews are the primary form of **Static Testing**. This means they evaluate the software without actually executing any code.
 
 Standard software engineering syllabi (like the ISTQB) categorize reviews into four distinct types, ranging from the most casual to the most strictly controlled.
 
 Here are the four types of reviews and exactly how they contribute to the overall quality of the software.
-
----
 
 ### The 4 Types of Reviews
 
@@ -1982,6 +2199,7 @@ Regardless of which type you use, integrating reviews into the testing lifecycle
     
 
 ---
+5.
 
 | **Feature / Aspect**     | **Static Testing**                                                                         | **Dynamic Testing**                                                         |
 | ------------------------ | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
@@ -1996,7 +2214,7 @@ Regardless of which type you use, integrating reviews into the testing lifecycle
 
 ---
 
-Explain the significance of Validation workbench
+## 6.Explain the significance of Validation workbench
 
 Just as the Verification Workbench brings strict structure to reviewing documents, the **Validation Workbench** brings that exact same structure to **executing the software**.
 
@@ -2096,7 +2314,7 @@ As developers write code and build the system, testing expands outward in four d
 
 ---
 
-Explain the levels of Acceptance Testing (Alpha, Beta and gamma)
+## 8.Explain the levels of Acceptance Testing (Alpha, Beta and gamma)
 Acceptance testing is the final phase of the software testing process. It determines whether a software product meets the business requirements and is truly ready to be released to the market.
 
 This process is traditionally broken down into three distinct levels:
@@ -2110,9 +2328,6 @@ This process is traditionally broken down into three distinct levels:
 - **Environment:** A controlled lab or development environment (in-house).
     
 - **Primary Goal:** To identify glaring bugs, crashes, and missing features. It ensures the core functionality works smoothly before handing it over to real users.
-    
-    +1
-    
 
 ### 2. Beta Testing (The Real-World Trial)
 
@@ -2142,16 +2357,16 @@ This process is traditionally broken down into three distinct levels:
 
 ### Quick Comparison Table
 
-|**Feature**|**Alpha Testing**|**Beta Testing**|**Gamma Testing**|
-|---|---|---|---|
-|**Testers**|Internal Team (QA/Devs)|Real End-Users|Real End-Users|
-|**Location**|In-House (Lab)|Real World|Real World|
-|**Focus**|Finding major bugs|Usability & edge-cases|Security & final performance|
-|**Feedback**|Technical fixes|User experience (UX)|Final release approval|
+| **Feature**  | **Alpha Testing**       | **Beta Testing**       | **Gamma Testing**            |
+| ------------ | ----------------------- | ---------------------- | ---------------------------- |
+| **Testers**  | Internal Team (QA/Devs) | Real End-Users         | Real End-Users               |
+| **Location** | In-House (Lab)          | Real World             | Real World                   |
+| **Focus**    | Finding major bugs      | Usability & edge-cases | Security & final performance |
+| **Feedback** | Technical fixes         | User experience (UX)   | Final release approval       |
 
 ---
 
-Explain the steps/Activities  of Verification & Validation in software Projects
+## 9.Explain the steps/Activities  of Verification & Validation in software Projects
 
 This is a perfect structure for an exam answer. Breaking down Verification and Validation (V&V) activities phase-by-phase shows a deep understanding of how quality is maintained throughout the entire Software Development Life Cycle (SDLC).
 
@@ -2251,55 +2466,71 @@ Here is how you can expand on each of those specific phases for your notes:
     - **Instruction Validation:** A tester literally follows the steps written in the user manual while using the software to validate that the instructions actually work and match the current user interface.
         
 
+
+OR
+
+### Conceptualization Phase
+
+**Verification** involves reviewing the initial business case or project proposal to ensure it aligns with the company's financial and technical capabilities. **Validation** involves market research or stakeholder interviews to confirm that the proposed software actually solves a real-world problem that users care about, before any money is spent.
+
+### Requirement Analysis
+
+In this phase, the team writes down exactly what the software must do. **Verification** involves carefully reviewing the Software Requirement Specification (SRS) document to ensure it is clear, complete, and free of logical contradictions. **Validation** involves sitting down with the client or end-users, walking them through these written requirements, and getting their formal sign-off to confirm, "Yes, this is exactly what we need."
+
+### Design Requirement
+
+Here, architects translate the requirements into a technical blueprint (like database schemas and system architecture). **Verification** involves checking these design documents against the original SRS to guarantee that every single requirement has been accounted for in the technical plan. **Validation** often involves building early visual prototypes or wireframes and showing them to users to ensure the proposed user interface and workflow make sense.
+
+### Coding
+
+This is where the actual programming happens. **Verification** is highly active here through static activities: developers conduct peer code reviews, use automated tools to scan for syntax errors or security flaws, and check that everyone is following the company's coding standards. **Validation** begins here as well, primarily through Unit Testing, where developers actually execute the small blocks of code they just wrote to ensure they produce the correct outputs.
+
+### Integration
+
+Once individual pieces of code are finished, they are plugged together. **Verification** involves reviewing the API documentation and interface designs to ensure the data formats match up on paper. **Validation** involves dynamic Integration Testing, where the team runs the combined modules together to ensure that data actually flows smoothly from one part of the system (like the shopping cart) to another (like the payment gateway) without crashing.
+
+### Testing
+
+This is the heavy-lifting phase for Validation. **Verification** here means reviewing the test plans and test cases to ensure they cover every possible scenario. **Validation** is the actual execution of those tests. The QA team runs System Testing to check the entire application from end to end, followed by User Acceptance Testing (UAT), where actual users operate the software to confirm it performs correctly in real-world conditions.
+
+### Installation
+
+This is the deployment of the software into the live production environment. **Verification** involves double-checking the server configurations, deployment scripts, and installation checklists to ensure no steps were missed. **Validation** involves running a quick "Smoke Test" or "Sanity Check" on the live system immediately after installation to confirm that the system turned on correctly and the core features are functioning for the end-user.
+
+### Documentation
+
+This phase runs parallel to the others and involves creating user manuals, help guides, and system documentation. **Verification** is the editorial process: reviewing the manuals for typos, technical accuracy, and completeness against the final software. **Validation** involves handing the manual to a user who has never seen the software before and observing if they can successfully use the instructions to complete a task.
+
 ---
 
-Overview of VModel
-The **V-Model** (Verification and Validation Model) is a highly disciplined software development methodology. It is essentially an extension of the classic Waterfall model, but instead of moving in a straight downward line, the process bends upwards after the coding phase, forming a "V" shape.
+## 10. Overview of VModel
+### The Left Side: Verification (Planning & Design)
 
-The most important concept of the V-Model is **mapping**. For every single development phase on the left side of the "V," there is a corresponding testing phase directly mapped to it on the right side. The test plans are written _before_ the code is even touched.
+As the team moves down these phases, they are verifying documents and actively writing the test plans for the future.
 
-Here is the breakdown of the phases, moving down the left side and up the right.
-
----
-
-### The Left Side: Verification (Development Phases)
-
-These phases focus on static analysis—checking documents and designs to ensure the team is building the product right.
-
-- **1. Requirement Analysis:** Gathering and detailing what the system needs to do.
+- **Conceptualization & Requirement Analysis (Pairs with UAT):** The team writes down exactly what the software must do. Verification involves reviewing the business case and the Software Requirement Specification (SRS) to ensure they are clear, complete, and free of logical contradictions. _Crucially, the team immediately writes the User Acceptance Test plans based on these requirements._
     
-    - _The Mapping:_ The team immediately writes the **Acceptance Test Plans** based on these requirements.
-        
-- **2. System Design:** Defining the complete hardware and communication setup for the entire product.
+- **High-Level Design / System Architecture (Pairs with System Testing):** Architects translate the requirements into a broad technical blueprint, mapping out major components. Verification involves checking these designs against the SRS to guarantee every requirement is accounted for. _Simultaneously, the QA team creates the System Test plans._
     
-    - _The Mapping:_ The team writes the **System Test Plans** based on this overarching design.
-        
-- **3. Architecture Design (High-Level Design):** Breaking the system down into different modules and defining how they will communicate with each other.
-    
-    - _The Mapping:_ The team writes the **Integration Test Plans** to verify these module-to-module connections.
-        
-- **4. Module Design (Low-Level Design):** Defining the specific, detailed logic (pseudo-code, database tables) for each individual module.
-    
-    - _The Mapping:_ The team writes the **Unit Test Plans** to check these isolated pieces of code.
-        
-
-### The Bottom: The Coding Phase
-
-- **5. Coding:** The actual source code is written based on the Low-Level Design. Once coding is complete, the execution moves up the right side of the "V."
+- **Low-Level Design / Component Design (Pairs with Integration Testing):** The team designs the specific API endpoints, data formats, and database schemas. Verification involves reviewing the API documentation and interface designs to ensure the data formats match up on paper. _Developers write the Integration Test plans here to figure out how these pieces will connect._
     
 
-### The Right Side: Validation (Testing Phases)
+### The Bottom of the V: Execution
 
-These phases focus on dynamic analysis—executing the compiled code to ensure they built the right product.
+- **Coding:** This is where the actual programming happens. Verification is highly active here through static activities: developers conduct peer code reviews, use automated tools to scan for syntax errors or security flaws, and check that everyone is following coding standards. _Developers also write the Unit Tests for their specific code blocks right now._
+    
 
-- **6. Unit Testing:** Executing the Unit Test Plans (written in phase 4) to check if the smallest pieces of code work in isolation.
+### The Right Side: Validation (Dynamic Testing)
+
+Now, the team moves upward, executing the test plans they created on the left side to validate the actual, compiled software.
+
+- **Unit Testing (Validates Coding):** Developers actually execute the small blocks of code they just wrote to ensure they produce the correct outputs.
     
-- **7. Integration Testing:** Executing the Integration Test Plans (written in phase 3) to check if the individual modules communicate with each other correctly without crashing.
+- **Integration Testing (Validates Low-Level Design):** Once individual pieces of code are finished, they are plugged together. The team runs the combined modules together to ensure that data actually flows smoothly from one part of the system (like the shopping cart) to another (like the payment gateway) without crashing.
     
-- **8. System Testing:** Executing the System Test Plans (written in phase 2) to check the performance, security, and functionality of the fully assembled application.
+- **System Testing (Validates High-Level Design):** The QA team executes the system tests they planned earlier, checking the entire, fully integrated application from end to end under simulated real-world conditions.
     
-- **9. Acceptance Testing:** Executing the Acceptance Test Plans (written in phase 1) in a real-world environment with actual users to prove the software solves the original business problem.
-    
+- **User Acceptance Testing & Installation (Validates Requirements):** The final validation. The client or end-users operate the software in a production-like environment to confirm, "Yes, this is exactly what we need." Once installed, a quick "Smoke Test" is run on the live system to confirm the core features turned on correctly.
 
 ---
 
@@ -2313,7 +2544,7 @@ These phases focus on dynamic analysis—executing the compiled code to ensure t
 
 ---
 
-Explain the testing activities conducted during coding phase
+## 11.Explain the testing activities conducted during coding phase
 During the coding (implementation) phase, testing is unique because it is primarily conducted by the **developers themselves**, rather than a dedicated QA testing team.
 
 The goal here is to catch defects at the source, right as the code is being written. Finding a bug during this phase is vastly cheaper and faster to fix than finding it weeks later during final system testing.
@@ -2339,8 +2570,86 @@ These activities involve actually running the code to see how it behaves.
     
 - **Test-Driven Development (TDD):** A specific coding activity where the developer writes the unit test _before_ they write the actual feature code. The test initially fails, and the developer then writes exactly enough code to make that specific test pass.
     
-- **Code Coverage Analysis:** Developers run specific tools alongside their unit tests to measure exactly how much of their source code is actually being tested. If the tool reports that only 40% of the code was executed during the tests, the developer knows they need to write more tests to cover those blind spots.
+- **Code Coverage Analysis:** Developers run specific tools alongside their unit tests to measure exactl code is actually being tested. If the tool reports ty how much of their sourcehat only 40% of the code was executed during the tests, the developer knows they need to write more tests to cover those blind spots.
     
+---
+
+## 12. PROPOSAL TESTING
+
+"Proposal Testing" in the V-Model is not about executing software, because the system description is not yet clear. Instead, it is the rigorous **static verification** of the proposal documents, quotations, and early concepts before any formal contracts are signed or code is written
+
+### 1. Verifying the Problem and Solution Definition
+
+The text states that the success of any approach lies in successfully defining the problem and the proposed solution.
+
+- **The Testing Activity:** Reviewing the customer's request (for information, quotation, or proposal) to ensure their core business problem is fully understood by the supplier. The testing team then verifies that the supplier's proposed approach logically solves that specific problem, even if the technical details are still informal.
+    
+
+### 2. Evaluating the Proof of Concept (PoC)
+
+If an informal or Proof of Concept approach is used to bridge the gap of an unclear system description, it must be validated.
+
+- **The Testing Activity:** Assessing the PoC to ensure it actually proves the core concept is viable in reality, rather than just acting as a theoretical sales pitch.
+    
+
+### 3. Feasibility Verification (The Core Review)
+
+The text highlights that both the customer and the supplier conduct a feasibility study. In the V-Model, Proposal Testing is the act of critically analyzing these specific constraints:
+
+- **Technical & Implementation Feasibility:** Reviewing the proposal to confirm that the solution can actually be built and successfully deployed using available technology.
+    
+- **Economic Feasibility:** Verifying that the quoted price makes financial sense for the customer's budget while remaining profitable for the supplier.
+    
+- **Organizational, Process, and People Fit:** Validating that the proposed system will seamlessly integrate into the customer's company culture (organizational), align with their daily workflows (process), and be usable by their actual staff (people).
+---
+
+## 13. Describe Testing Activities During Design Phase in V levels of testing
+
+In the V-Model, testing during the Design Phase does not involve executing code. Instead, it is a strict **static verification** of the architecture and design documents (High-Level and Low-Level Design) before programming begins. Simultaneously, the QA team is actively writing the Integration and System Test plans.
+
+The primary goal of testing here is to catch structural flaws early, because fixing a design document is significantly cheaper than rewriting thousands of lines of code later.
+
+Here is an expansion of the specific testing activities focused on identifying those five critical defects:
+
+### 1. Identifying Missing Test Cases
+
+- **The Activity:** As the QA team reads the design blueprints, they write the test cases that will be executed later on the right side of the "V". Verification involves reviewing these new test plans against the design documents.
+    
+- **The Goal:** To ensure absolute coverage. If the design document outlines a new user authentication flow that includes a "Forgot Password" feature, the testing team must verify that a specific test case has actually been written to validate that feature. If the test case is missing, the feature will go untested in production.
+    
+
+### 2. Catching Faulty Logic
+
+- **The Activity:** Reviewing the proposed algorithms, workflows, and state diagrams detailed in the Low-Level Design (LLD).
+    
+- **The Goal:** To statically test the logic on paper before it becomes code. Reviewers trace the proposed logical paths to find fatal flaws, such as infinite loops, incorrect mathematical calculations, or error-handling paths that lead to dead ends instead of safely recovering the system.
+    
+
+### 3. Preventing Module Interface Mismatch
+
+- **The Activity:** High-Level Design (HLD) breaks the software down into distinct modules (e.g., separating the Shopping Cart module from the Payment Gateway module). Testing here involves scrutinizing the boundaries where these modules communicate.
+    
+- **The Goal:** To ensure the "handshake" between modules is perfectly aligned. If the Shopping Cart is designed to send a total price as a floating-point number (e.g., `19.99`), but the Payment Gateway is designed to only accept whole integers (e.g., `20`), this interface mismatch will cause the system to crash during Integration Testing.
+    
+
+### 4. Resolving Data Structure Inconsistency
+
+- **The Activity:** Examining the proposed database schemas, data dictionaries, and internal memory structures detailed by the architects.
+    
+- **The Goal:** To ensure data is handled uniformly across the entire application. An inconsistency occurs if a "Customer ID" is defined as a 10-character string in the database design, but the application's backend logic is designed to process it as a 16-character string. Catching this now prevents massive database corruption later.
+    
+
+### 5. Highlighting Inconsistency with Requirements and High-Level Design
+
+- **The Activity:** This is the ultimate traceability check. The testing team performs a cross-reference review bridging three different phases.
+    
+- **The Goal:** To ensure "scope creep" or omissions haven't occurred. They verify that the Low-Level Design (the micro-details) strictly obeys the rules set by the High-Level Design (the macro-architecture). Furthermore, they trace both designs back to the original Software Requirement Specification (SRS) to guarantee that every single business requirement has a corresponding design, and that the architects haven't accidentally designed features the client never actually asked for.
+    
+
+---
+
+**Next Step:** Once the design is fully verified, the project reaches the bottom of the "V" and coding begins. Would you like me to detail the specific static and dynamic testing activities developers perform during the **Implementation (Coding) Phase** to ensure their individual code blocks are flawless?
+
 
 ---
 NOTE: BELOW CONTENT IS OMITTED FOR EXAMS

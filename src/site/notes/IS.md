@@ -2472,10 +2472,8 @@ _(Note: There is a third type called **PAT** or **NAT Overload**, which maps tho
 
 ---
 
-12 **What are the strengths and weakness of firewalls
-This is a classic "evaluate" or "analyze" question that frequently appears on exams to test if you understand the practical limitations of network security, rather than just knowing the definitions.
+## 12 **What are the strengths and weakness of firewalls
 
-Here is a structured breakdown of the strengths and weaknesses of firewalls, perfectly formatted for your exam preparation.
 
 ### Strengths of Firewalls (Why we need them)
 
@@ -2530,16 +2528,12 @@ Here is a structured breakdown of the strengths and weaknesses of firewalls, per
 
 ---
 
-13 **Write a short note on network based IDS
-This is the perfect logical next step after discussing the weaknesses of firewalls. While a firewall is your digital security guard at the front door, a **Network-Based Intrusion Detection System (NIDS)** is the complex network of security cameras constantly watching everything happening _inside_ the building.
-
-Here is a structured, exam-ready short note on NIDS:
+## 13. **Write a short note on network based IDS
 
 ### What is a Network-Based IDS (NIDS)?
 
 A **Network-Based Intrusion Detection System (NIDS)** is a passive security tool placed at strategic points within a network to monitor traffic to and from all devices. Its primary job is to inspect packets in real-time, looking for suspicious activity, known malware signatures, or policy violations, and then generate an alert for administrators if it spots an attack.
 
-+1
 
 ### Key Characteristics of a NIDS
 
@@ -2547,7 +2541,6 @@ A **Network-Based Intrusion Detection System (NIDS)** is a passive security tool
 
 - **How it works:** Unlike a firewall, which traffic must physically flow _through_, a NIDS typically sits "out-of-band." It is connected to a special port on a network switch (called a SPAN port or Mirror port) that sends it a _copy_ of all the network traffic.
     
-    +1
     
 - **The Benefit:** Because it only analyzes copies of the packets, a NIDS does not slow down network performance. If the NIDS crashes, the network keeps functioning perfectly.
     
@@ -2555,9 +2548,7 @@ A **Network-Based Intrusion Detection System (NIDS)** is a passive security tool
 **2. Detection, Not Prevention**
 
 - **How it works:** An IDS is strictly a _detective_ control. If it sees an attack, it will log the event and send an alarm to the security team. It does **not** have the ability to drop packets, block the attacker's IP, or stop the attack from happening (that is the job of an Intrusion _Prevention_ System - IPS).
-    
-    +1
-    
+  
 
 ### How a NIDS Detects Attacks
 
@@ -2577,26 +2568,19 @@ A NIDS generally uses two different methods to spot an intrusion:
 
 ---
 
-14 **Write a short note on HOST based ids
-
-This is the perfect counterpart to your previous question. While a Network IDS (NIDS) acts like the security cameras in the hallways of a building, a **Host-Based IDS (HIDS)** is the security system inside a specific, locked office.
-
-Here is a structured, exam-ready short note on HIDS:
+## 14 **Write a short note on HOST based ids
 
 ## What is a Host-Based IDS (HIDS)?
 
 A **Host-Based Intrusion Detection System (HIDS)** is a security software agent installed directly on an individual computer, server, or endpoint (the "host"). Instead of watching network cables, a HIDS looks deeply inward. Its primary job is to monitor the internal operating system and log files of that specific machine to detect malicious activity or policy violations.
 
-+2
 
 ### Key Functions of a HIDS
 
 **1. File Integrity Monitoring (FIM)**
 
 - **How it works:** This is arguably the most critical feature of a HIDS. It takes a cryptographic hash (a digital fingerprint) of vital operating system files and configuration files. If an attacker or a piece of malware (like a rootkit) secretly alters one of those core files, the hash changes. The HIDS immediately notices the discrepancy and triggers an alarm.
-    
-    +1
-    
+  
 
 **2. Log and Process Analysis**
 
@@ -2619,12 +2603,23 @@ A **Host-Based Intrusion Detection System (HIDS)** is a security software agent 
     - **Vulnerable to Host Compromise:** If an attacker successfully gains full "Root" or "Administrator" privileges on the machine, the very first thing they will do is disable or manipulate the HIDS agent so it stops reporting their activity.
         
 
+| **Feature**                    | **NIDS (Network-Based IDS)**                                                                                  | **HIDS (Host-Based IDS)**                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Scope & Focus**              | Monitors an entire network segment or subnet.                                                                 | Monitors a single, specific machine (server, laptop, or virtual machine).                                                         |
+| **Placement**                  | Placed at strategic network choke points (e.g., behind firewalls, on core switches using SPAN/mirror ports).  | Installed directly as a software agent on the host's Operating System.                                                            |
+| **What it Analyzes**           | Raw network packets passing over the wire (headers, payloads, traffic patterns).                              | System calls, application logs, file system changes (File Integrity Monitoring), and running processes.                           |
+| **Handling Encrypted Traffic** | **Blind to encrypted traffic** (like HTTPS/TLS) unless a dedicated decryption proxy is placed in front of it. | **Can analyze encrypted data** because it reads the data directly on the machine _after_ the OS has decrypted it.                 |
+| **Resource Consumption**       | Runs on its own dedicated hardware or virtual appliance; zero impact on the servers it monitors.              | Consumes CPU, memory, and storage directly on the host machine; can potentially impact system performance.                        |
+| **Strengths**                  | Detecting broad network sweeps, DDoS attempts, port scans, and malware spreading between machines.            | Detecting privilege escalation, unauthorized file modifications, insider threats, and malicious changes to system configurations. |
+| **Management & Scaling**       | Easier to deploy centrally. One NIDS sensor can monitor thousands of devices.                                 | Harder to scale. Requires installing, updating, and managing a software agent on every single machine in the fleet.               |
+| **Compromise Risk**            | If a single server is hacked, the NIDS remains safe and continues logging the attacker's network activity.    | If the host OS is compromised, the attacker can often disable or tamper with the HIDS agent to hide their tracks.                 |
+
+
 ---
 
-15 Write a short note on SIEM in Context of Information security
+## 15 Write a short note on SIEM in Context of Information security
+
 **SIEM (Security Information and Event Management)** is a specialized security solution that provides a centralized "bird's-eye view" of an organization's entire IT infrastructure. It acts as the central brain of a Security Operations Center (SOC) by collecting, analyzing, and correlating data from various sources.
-
-
 
 ---
 
@@ -2664,6 +2659,7 @@ A **Host-Based Intrusion Detection System (HIDS)** is a security software agent 
 ---
 
 ## 16 What are the security Threats and IDS can detect and prevent
+
 To clarify a quick technical point before diving in: a strict IDS (Intrusion Detection System) only _detects_ threats and sends an alert. It is an IPS (Intrusion Prevention System) that actively drops the packets to _prevent_ the attack. However, modern security appliances almost always combine these into a single engine.
 
 Here is a breakdown of the specific threats these systems are designed to catch and stop:
@@ -2725,6 +2721,7 @@ Because intrusion detection systems look for specific malware signatures, attack
 ---
 
 ## 17. Explain Anamoly Detection Model of IDS and it's pros, cons
+
 Unlike Signature-Based Detection, which relies on a dictionary of known bad behaviors (like an antivirus scanner), an **Anomaly-Based Detection** model (often called Heuristic or Behavior-Based Detection) looks for the _unknown_.
 
 Instead of asking, "Is this traffic definitely malicious?" it asks, "Is this traffic abnormal for our specific network?"
@@ -2800,7 +2797,8 @@ Think of it like a digital bouncer holding a stack of "Wanted" posters. If a pac
 
 ---
 
-## 19 What are the IDS Deployment Considerations.
+## 19 What are the IDS Deployment Considerations
+
 Deploying an Intrusion Detection System (IDS) is not as simple as plugging an appliance into a rack and turning it on. If poorly configured, an IDS can slow down the entire network, overwhelm security teams with useless alarms, and run out of hard drive space.
 
 Here is a breakdown of the core deployment considerations to ensure the system is actually effective:
@@ -2911,7 +2909,6 @@ The **Trusted Computing Base (TCB)** is the complete set of hardware, firmware, 
 
 In simple terms, it is the core "trusted" part of the system. If a component inside the TCB contains a flaw or is compromised, the security of the entire system is broken. Because of this, the TCB is designed to be as small and simple as possible so it can be rigorously tested and verified. Everything outside the TCB (like user applications) is considered "untrusted" and must rely on the TCB to perform secure operations.
 
-+1
 
 ### Significance of TCB in Ensuring System Security
 
@@ -2929,6 +2926,47 @@ The TCB is critical to system security for the following reasons:
     
 
 ---
+Write a note on Monolithic Kernel and Microkernel Architecture
+
+
+### 1. Monolithic Kernel (The "All-in-One" OS)
+
+In a monolithic kernel, every single operating system service runs together in a single, massive block of code within a highly privileged area of memory called **Kernel Space**.
+
+- **What is inside:** Memory management, CPU scheduling, the network stack, file systems, and every single device driver (mouse, keyboard, graphics card) are all bundled together.
+    
+- **Real-World Examples:** Linux, Unix, and MS-DOS.
+    
+- **The Pros (Speed):** Because everything lives in the same memory space, components can talk to each other instantly. When a program needs to write to a disk, the system does not have to jump through hoops to pass messages around; it just executes the function. It is incredibly fast and highly efficient.
+    
+- **The Cons (Instability):** Because every driver has total access to the system, a single bug in a third-party driver (like a faulty graphics card update) can cause a fatal crash that takes down the entire operating system. This is what causes a "Kernel Panic" in Linux or a "Blue Screen of Death" in Windows.
+    
+
+### 2. Microkernel Architecture (The "Bare Minimum" OS)
+
+A microkernel takes the opposite approach. It strips the Kernel Space down to the absolute bare minimum required to keep the machine running. Everything else is pushed out into **User Space**, running as separate, isolated processes.
+
+- **What is inside:** Only basic CPU scheduling, basic memory management, and Inter-Process Communication (IPC). The file systems, network stack, and device drivers all run as standard, unprivileged background applications.
+    
+- **Real-World Examples:** MINIX, QNX (used heavily in automotive and medical devices), and L4.
+    
+- **The Pros (Stability & Security):** It is incredibly resilient. If your network driver crashes, it does not touch the core OS. The microkernel simply restarts the network driver process in the background, and the system keeps running without the user even noticing.
+    
+- **The Cons (Performance Overhead):** Because all the services are separated, they have to constantly send messages to each other through the microkernel (via IPC) to get anything done. This constant "context switching" between User Space and Kernel Space creates a significant performance bottleneck.
+    
+
+### Summary Comparison
+
+|**Feature**|**Monolithic Kernel**|**Microkernel**|
+|---|---|---|
+|**Location of Services**|All OS services run in privileged Kernel Space.|Most OS services run in unprivileged User Space.|
+|**Performance**|Very high. Fast execution with minimal overhead.|Lower. Slowed down by constant message passing (IPC).|
+|**Stability**|Vulnerable. A bug in one driver crashes the whole system.|Highly stable. A crashed driver can just be restarted.|
+|**Codebase Size**|Massive (millions of lines of code).|Tiny (often just a few thousand lines of code).|
+|**Primary Use Cases**|Desktop PCs, heavy enterprise servers, cloud infrastructure.|Embedded systems, medical devices, automotive computing (where a crash is fatal).|
+
+---
+
 
 ## 2.Compare Monolithic Kernel and Microkernel architectures from a security perspective.
 
@@ -2950,7 +2988,6 @@ The core difference between these two architectures from a security standpoint c
 ---
 
 ## 3.PROBLEMS WITH TCP/IP
-Based on the text you provided, the TCP/IP protocol has several fundamental security and implementation weaknesses. For an exam answer, you can break down the problems into these five primary categories:
 
 ### Key Problems with the TCP/IP Protocol
 
