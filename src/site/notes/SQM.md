@@ -13,10 +13,10 @@
 ![IMG-20260222-073450.png](/img/user/IMG-20260222-073450.png)
 ## **Subjective vs Objective Quality — Elaborated**
 
-### **Subjective Quality: "It feels rights2"**
+### **Subjective Quality: "It feels right"**
 
 - **Customer-centric**: Based on individual perception and emotion. It is intangible and often tied to personal values, aesthetics, and brand reputation, making it harder to measure but crucial for customer retention.
-- **Relative**: What’s "quality" for one user may not be for another. This variability makes subjective quality a moving target influenced by trends, culture, social proof, and evolving consumer tastes.2
+- **Relative**: What’s "quality" for one user may not be for another. This variability makes subjective quality a moving target influenced by trends, culture, social proof, and evolving consumer tastes.
 - **Examples**:
     - A luxury car’s smooth ride and premium interior (feeling of excellence).
     - Smartphone interface being intuitive and satisfying (user experience).
@@ -217,7 +217,8 @@ Customer needs are essential requirements that must be met, regardless of whethe
 Meeting Customer Expectations
 Customer expectations are of two types: **expressed** (documented formally) and **implied** (expected by default but not stated). It's the development team's responsibility to clarify and convert as many implied expectations as possible into expressed requirements through questioning. This is challenging but crucial, since developers may reject issues related to undocumented implied expectations.
 
-—————
+
+---
 
 ## 5.SUPPLIERS VIEW OF QUALITY
 
@@ -238,8 +239,7 @@ Doing things right the first time avoids waste, reduces costs, and increases pro
 
 ---
 
-## 6.CONTINUAL (CONTINUOUS) IMPROVEMENT
-CYCLE
+## 6.CONTINUAL (CONTINUOUS) IMPROVEMENT CYCLE
 
 Continual (Continuous) improvement cycle is based on systematic
 sequence of Plan Do-Check-Act activities representing a never-ending
@@ -297,20 +297,17 @@ Continuously **improve every process**—including planning, production, service
 SPC (Statistical Process Control) is a quality control method that uses statistical tools to monitor, control, and improve a process by analyzing data in real-time. It aims to:
 
 Detect variations in the process (common cause vs. special cause)
-
 Ensure consistency and predictability in production
-
 Prevent defects rather than just inspecting finished products
-
 Use control charts to visually track process performance over time
 
 ---
 
-## 9.QUALITY CONTROL
+## QUALITY CONTROL
 
 Quality Control involves inspecting products against defined standards to assess process outcomes. Its goal is to remove defects, improve process capability, lower costs, and enhance customer satisfaction. By measuring deviations from planned targets, organizations can take corrective actions to minimize variations.
 
-QUALITY IMPROVMENT
+## QUALITY IMPROVMENT
 
 **Quality Improvement** is an ongoing effort to enhance production processes by assessing product attributes. There is no endpoint—continuous challenges must be addressed. By identifying deviations from planned levels and tolerances, organizations can prioritize actions on weak areas for better outcomes.
 
@@ -322,7 +319,7 @@ BENCHMARKING AND METRICS
 
 ---
 
-## 10. Differentiate between tools and techniques using examples
+## 9. Differentiate between tools and techniques using examples
 
 In Software Quality Management (SQM), the terms **"Tool"** and **"Technique"** are frequently used together, but they represent two entirely completely different parts of the problem-solving process.
 
@@ -331,9 +328,7 @@ The simplest way to remember the difference is:
 - **A Technique is the _How_:** It is the cognitive process, methodology, or logic used to perform a task. It exists in the human mind or as a written procedure.
     
 - **A Tool is the _What_:** It is the software, instrument, or automation used to actually execute that technique.
-    
-
-Here is a detailed breakdown of how they differ, followed by concrete examples in software development.
+ .
 
 ### Core Differences
 
@@ -373,11 +368,8 @@ To clearly see the difference, look at how a QA engineer pairs a technique with 
 
 ---
 
-## 11. Describe the cultural changes required for Quality Improvement
+## 10. Describe the cultural changes required for Quality Improvement
 
-Transforming an organization's approach to quality requires moving away from isolated, ad-hoc fixes and establishing a structured, management-led environment. To achieve lasting Quality Improvement, the culture must shift across several core areas.
-
-Here is an expansion of the specific cultural changes required:
 
 ### 1. Fostering Cross-Functional Collaboration
 
@@ -395,8 +387,6 @@ A culture of quality does not mean blindly attempting to fix every single flaw i
 - **The Cultural Shift:** Teams must adopt an analytical, pragmatic approach to problem-solving. They must accept that resources and investments are finite.
     
 - **The Impact:** Instead of operating on intuition, the culture shifts to using formal prioritization techniques like **Pareto Analysis** (focusing on the 20% of defects causing 80% of the issues) and **Cost-Benefit Analysis**. This ensures the organization is investing its effort where it will derive the maximum possible benefit.
-    
-
 ### 3. Driving Behavior Through Measurable Goals
 
 Vague directives like "do better" do not change a culture.
@@ -535,12 +525,55 @@ Each iteration produces a working version of the software with more features or 
     
 6. The entire procedure is challenging to manage.
 
+---
+
+## 11. **Quality in Terms of Generic Expectations from Any Product**
+
+Quality refers to the degree to which a product satisfies the needs, expectations, and requirements of users or customers. A product is considered to have good quality when it performs its intended function reliably and meets both explicit and implicit expectations of users.
+
+In general, quality can be understood through several generic expectations that apply to any product, whether it is software, hardware, or a physical good.
+
+**1. Fitness for Purpose** A product must perform the function for which it was designed. If a product successfully accomplishes its intended task, it is said to have quality. Customers purchase items to solve specific problems, making this the most fundamental baseline for satisfaction. If a product fails this core objective, no amount of extra features can compensate for the lack of utility.
+
+- **Example:** A word processing software should allow users to create, edit, and format documents efficiently.
+    
+
+**2. Reliability** Reliability means the product performs consistently without failures under normal operating conditions. A high-quality product should not crash, break, or stop functioning frequently. Users need to trust that the product will behave predictably every single time they interact with it. Frequent breakdowns not only frustrate the user but also destroy the brand's reputation for dependability.
+
+- **Example:** A banking application should process transactions accurately without errors.
+    
+
+**3. Usability** The product should be easy to use, understand, and operate by the intended users. Complex or confusing products reduce perceived quality. An intuitive design ensures that new users can achieve their goals without needing extensive training or thick instruction manuals. Ultimately, a tool is only valuable if the target audience can actually figure out how to operate it smoothly.
+
+- **Example:** A mobile application with a simple interface and clear navigation provides better usability.
+    
+
+**4. Efficiency (Performance)** A good quality product should perform its tasks efficiently using minimal resources such as time, memory, and processing power. In today's fast-paced environment, sluggish response times are often interpreted as a direct lack of quality. Optimizing how a product consumes resources directly translates to a smoother, more satisfying user experience.
+
+- **Example:** Software that loads quickly and processes data efficiently demonstrates good performance.
+    
+
+**5. Maintainability** The product should be easy to maintain, update, and repair when problems occur. High-quality products allow easy modifications and improvements. As business needs evolve and environments change, the product must be adaptable enough to grow alongside them. A modular and well-documented architecture significantly reduces the time and cost required for these future upgrades.
+
+- **Example:** Software systems should allow developers to fix bugs or add new features without major redesign.
+    
+
+**6. Durability** Durability refers to the product’s ability to function for a long period without deterioration in performance. Customers view longevity as a key indicator of their return on investment. Whether it is resisting physical wear and tear or avoiding software software code rot, a high-quality item is built to withstand the test of time.
+
+- **Example:** A well-designed software system should remain stable even after years of use.
+    
+
+**7. Safety and Security** A quality product should ensure safety and protect users from risks, errors, or security threats. Any vulnerability that exposes a user to physical harm or data theft immediately voids all other quality metrics. Ensuring robust protection builds the essential foundation of trust between the creator and the consumer.
+
+- **Example:** Online payment systems should protect user data and prevent unauthorized access.
 
 
+
+---
 
 MODULE 2
 
-Define Software Testing, Verification and Validation
+## 1. Define Software Testing, Verification and Validation
 
 ### **1. Software Testing**
 
@@ -577,7 +610,7 @@ It focuses on the "product" itself. Even if a piece of software is bug-free (Ver
 
 ---
 
-Necessity of testing
+## 2.Necessity of testing
 
 ### **1. Cost-Effectiveness and Early Detection**
 
