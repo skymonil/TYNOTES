@@ -1283,12 +1283,12 @@ Here is how the two approaches compare.
 
 ### 1. Core Differences
 
-|**Feature**|**Traditional Equivalence Testing**|**Improved Equivalence Testing**|
-|---|---|---|
-|**Primary Focus**|Input data domains.|Output domains and system states.|
-|**Partitioning Basis**|What data is allowed into the field?|What results/actions does the system produce?|
-|**Complexity**|Low (Tests variables in isolation).|High (Tests relationships and state changes).|
-|**Blind Spot**|Misses bugs caused by backend state logic.|Requires much deeper knowledge of the architecture.|
+| **Feature**            | **Traditional Equivalence Testing**        | **Improved Equivalence Testing**                    |
+| ---------------------- | ------------------------------------------ | --------------------------------------------------- |
+| **Primary Focus**      | Input data domains.                        | Output domains and system states.                   |
+| **Partitioning Basis** | What data is allowed into the field?       | What results/actions does the system produce?       |
+| **Complexity**         | Low (Tests variables in isolation).        | High (Tests relationships and state changes).       |
+| **Blind Spot**         | Misses bugs caused by backend state logic. | Requires much deeper knowledge of the architecture. |
 
 ---
 
@@ -1381,15 +1381,15 @@ Notice that the input—"Entering an Invalid PIN"—does not always produce the 
 
 Testers map this out using a table to ensure they test every possible path the user could take:
 
-|**Current State**|**Event (User Input)**|**Action (System Output)**|**Next State**|
-|---|---|---|---|
-|**S1: Start**|Insert Card|Prompt for PIN|**S2: 1st Try**|
-|**S2: 1st Try**|Enter _Valid_ PIN|Show Main Menu|**S5: Access Granted**|
-|**S2: 1st Try**|Enter _Invalid_ PIN|Show "2 Attempts Left"|**S3: 2nd Try**|
-|**S3: 2nd Try**|Enter _Valid_ PIN|Show Main Menu|**S5: Access Granted**|
-|**S3: 2nd Try**|Enter _Invalid_ PIN|Show "1 Attempt Left"|**S4: 3rd Try**|
-|**S4: 3rd Try**|Enter _Valid_ PIN|Show Main Menu|**S5: Access Granted**|
-|**S4: 3rd Try**|Enter _Invalid_ PIN|Swallow Card & Show Error|**S6: Account Locked**|
+| **Current State** | **Event (User Input)** | **Action (System Output)** | **Next State**         |
+| ----------------- | ---------------------- | -------------------------- | ---------------------- |
+| **S1: Start**     | Insert Card            | Prompt for PIN             | **S2: 1st Try**        |
+| **S2: 1st Try**   | Enter _Valid_ PIN      | Show Main Menu             | **S5: Access Granted** |
+| **S2: 1st Try**   | Enter _Invalid_ PIN    | Show "2 Attempts Left"     | **S3: 2nd Try**        |
+| **S3: 2nd Try**   | Enter _Valid_ PIN      | Show Main Menu             | **S5: Access Granted** |
+| **S3: 2nd Try**   | Enter _Invalid_ PIN    | Show "1 Attempt Left"      | **S4: 3rd Try**        |
+| **S4: 3rd Try**   | Enter _Valid_ PIN      | Show Main Menu             | **S5: Access Granted** |
+| **S4: 3rd Try**   | Enter _Invalid_ PIN    | Swallow Card & Show Error  | **S6: Account Locked** |
 
 ---
 
@@ -2024,16 +2024,24 @@ Validation is the process of evaluating the software **at the end** of the devel
 
 ---
 
-### The Differences at a Glance
+## **Distinguish between Verification and Validation based on the Testing Life Cycle**
 
-|**Feature**|**Verification**|**Validation**|
+|Basis|Verification|Validation|
 |---|---|---|
-|**The Core Question**|Are we building the product right?|Are we building the right product?|
-|**Execution**|**Static Testing:** The code is _not_ executed.|**Dynamic Testing:** The code _is_ executed.|
-|**Target**|Requirement documents, design specs, source code.|The actual compiled software/application.|
-|**When it happens**|Early and continuously throughout the SDLC.|Later in the SDLC (after the code is built).|
-|**Foundational Model**|The left side of the **V-Model**.|The right side of the **V-Model**.|
+|**Definition**|Verification is the process of checking whether the software is being developed according to the specified requirements and design documents.|Validation is the process of checking whether the developed software meets the user’s needs and expectations.|
+|**Focus**|Focuses on **process correctness** during development.|Focuses on **product correctness** after development.|
+|**Objective**|To ensure that the **right process** is followed during the software development life cycle.|To ensure that the **right product** is built for the customer.|
+|**Testing Life Cycle Stage**|Performed **throughout the development life cycle**, at each phase.|Performed **after development**, during execution of the software.|
+|**Type of Activity**|Static activity (does not involve executing the code).|Dynamic activity (involves executing the software).|
+|**Techniques Used**|Reviews, inspections, walkthroughs, requirement analysis, design reviews.|System testing, acceptance testing, functional testing.|
+|**Who Performs It**|Developers, testers, analysts, and quality assurance teams.|Testers and end users/customers.|
+|**Error Detection**|Detects **defects in documents, design, and process**.|Detects **defects in the actual running software**.|
+|**Question Answered**|“Are we building the product right?”|“Are we building the right product?”|
+|**Relation to Testing Philosophy**|Prevents defects early in the life cycle.|Confirms usability and fitness of the final product.|
 
+---
+
+Challenges in Testing
 ---
 
 ### Why is V&V Important?
@@ -2603,13 +2611,32 @@ As the team moves down these phases, they are verifying documents and actively w
 
 Now, the team moves upward, executing the test plans they created on the left side to validate the actual, compiled software.
 
-- **Unit Testing (Validates Coding):** Developers actually execute the small blocks of code they just wrote to ensure they produce the correct outputs.
+- Unit Testing (The Foundation)
+
+- **When it happens:** During the actual Coding/Implementation phase.
     
-- **Integration Testing (Validates Low-Level Design):** Once individual pieces of code are finished, they are plugged together. The team runs the combined modules together to ensure that data actually flows smoothly from one part of the system (like the shopping cart) to another (like the payment gateway) without crashing.
+- **How it fits in:** This is where developers use the techniques we discussed earlier (like Statement Coverage and Mocking). They test their individual functions in absolute isolation before giving their code to anyone else. It is the cheapest and fastest testing phase.
     
-- **System Testing (Validates High-Level Design):** The QA team executes the system tests they planned earlier, checking the entire, fully integrated application from end to end under simulated real-world conditions.
+
+**2. Integration Testing (The Connections)**
+
+- **When it happens:** After the Unit Tests pass, when developers start connecting their modules together.
     
-- **User Acceptance Testing & Installation (Validates Requirements):** The final validation. The client or end-users operate the software in a production-like environment to confirm, "Yes, this is exactly what we need." Once installed, a quick "Smoke Test" is run on the live system to confirm the core features turned on correctly.
+- **How it fits in:** Even if two isolated functions work perfectly on their own, they might crash when they try to share data. Integration testing verifies the communication between databases, APIs, and individual microservices.
+    
+
+**3. System Testing (The Full Assembly)**
+
+- **When it happens:** Once the entire application is fully assembled.
+    
+- **How it fits in:** This is where QA engineers perform end-to-end (E2E) testing. They do not look at the code; they test the application as a Black Box, using techniques like **Decision Tables** and **State Transition Testing** to ensure the software meets the original technical specifications.
+    
+
+**4. Acceptance Testing (The Business Goal)**
+
+- **When it happens:** Right before deployment to production.
+    
+- **How it fits in:** Also known as User Acceptance Testing (UAT). This is performed by the actual clients, product managers, or end-users. They are not looking for typos in the code; they are using **Use Case Testing** to verify that the software actually solves the business problem it was built for.
 
 ---
 
