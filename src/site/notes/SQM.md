@@ -717,7 +717,63 @@ This approach is characterized by high uncertainty because interface errors and 
 
 Because the approach assumes that all "real" modules are available at the time of testing, there is a significantly reduced need for stubs and drivers. Stubs and drivers are dummy pieces of code used to simulate missing modules in other testing types. Since Big Bang only happens when everything is finished, the "real" modules are used, which saves the time usually spent writing simulation code.
 
-.
+---
+
+
+
+### Part 1: Total Quality Management (TQM)
+
+**TQM** is a comprehensive, organization-wide management philosophy. Its core premise is that quality is not just the responsibility of the QA department; it is the responsibility of every single employee, from the CEO down to the newest intern.
+
+Instead of just inspecting products for defects at the very end of the line, TQM focuses on continuously improving the underlying processes that create the product.
+
+**The Core Pillars of TQM:**
+
+- **Customer-Focused:** The customer ultimately determines the level of quality. No matter what the company does to foster quality improvement, the effort is only successful if the customer sees the value.
+    
+- **Total Employee Involvement:** Everyone participates in working toward common goals. This requires empowering employees and creating a culture where people are not afraid to point out flaws.
+    
+- **Process-Centered:** A fundamental part of TQM is focusing on process thinking. A process is a series of steps that take inputs and turn them into outputs. TQM aims to make these steps highly efficient and error-free.
+    
+- **Continual Improvement:** Recognizing that perfection is a moving target. TQM relies on constant, incremental changes to get better over time, rather than massive, disruptive overhauls.
+    
+
+---
+
+### Part 2: Green, Blue, and Red Money
+
+When an organization uses TQM to fix a bad process, management will immediately ask: _"How much money did this quality improvement actually save us?"_ To answer this accurately, Business Intelligence and Quality Assurance teams categorize financial impact into three "colors" of money. This prevents teams from claiming fake financial savings.
+
+#### 1. Green Money (Hard Savings)
+
+Green money is **tangible, bottom-line cash**. It is money that you can visibly see returning to the company's bank account or budget because of a quality improvement.
+
+- **The Rule:** If the CFO can literally take this money and spend it on something else tomorrow, it is Green.
+    
+- **Software Example:** The QA team discovers that a legacy cloud database is completely redundant and no longer needed. They shut it down. The company stops paying the $5,000/month AWS invoice. That is a direct, Green money saving of $60,000 a year.
+    
+
+#### 2. Blue Money (Soft Savings / Cost Avoidance)
+
+Blue money represents **freed-up capacity or time**. You have made the process significantly more efficient, but the company's bank account balance hasn't actually changed.
+
+- **The Rule:** You saved hours of labor, but because you didn't fire anyone or reduce their salary, you didn't actually "save" physical cash. Instead, you gave the company the _capacity_ to do more work with the same headcount.
+    
+- **Software Example:** A tester spends 10 hours a week manually testing the login screen. They write an automated script that now does it in 5 seconds. The tester's salary stays exactly the same (no Green money is saved), but they now have 10 extra hours a week to test other, more important features. That time saved is Blue money.
+    
+
+#### 3. Red Money (The Investment / Cost to Achieve)
+
+Red money is the **actual cash you have to spend** to implement the quality improvement. You usually have to spend Red money to generate Green or Blue savings.
+
+- **The Rule:** This is the upfront capital expenditure or the ongoing operational cost of the new, improved solution.
+    
+- **Software Example:** To achieve the Blue money savings mentioned above, the company had to purchase a $2,000 automation software license and spend $1,000 on training for the QA team. That $3,000 is the Red money investment required to fix the process.
+    
+
+---
+
+**Next Step:** In TQM, understanding where money is being lost to poor quality is critical. Would you like me to break down the four pillars of the **Cost of Quality (CoQ)** framework (Prevention, Appraisal, Internal Failure, and External Failure costs)?
 
 ---
 
