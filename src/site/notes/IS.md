@@ -253,8 +253,6 @@ Maintenance ensures the long-term effectiveness of the security program. **Polic
 
 ---
 
----
-
 ## 6.Justification: Why the Defender’s Job Is Harder Than the Attacker’s
 
 The attacker needs to exploit only one weakness in a system to succeed, whereas the defender must attempt to protect against all possible vulnerabilities. Since no system can be perfectly secure, achieving complete protection is practically impossible.
@@ -958,7 +956,7 @@ Would you like to see how to write a **Security Policy (Administrative Control)*
 # UNIT 2
 
 
-What is Authentication. Explain  types of authentication systems 
+## 1.What is Authentication. Explain  types of authentication systems 
 ### What is Authentication?
 
 **Authentication** is the security process of verifying the identity of a user, device, or system. Simply put, it answers the question: _"Are you actually who you claim to be?"_ It is the very first step in network security. Before a system decides what you are allowed to do (Authorization) or tracks what you are doing (Accounting), it must absolutely confirm your identity.
@@ -979,7 +977,7 @@ This is the most common and traditional form of authentication, based entirely o
     
 - **The Kerberos Solution:** To fix the interception problem, enterprise networks (like Microsoft Active Directory) use the **Kerberos** protocol. Instead of transmitting your actual password over the network, Kerberos uses a trusted third-party server called a Key Distribution Center (KDC). When you log in, the KDC verifies your password locally and hands your computer a temporary, encrypted "Ticket." Your computer then uses this ticket—not your password—to securely prove your identity to other servers and services on the network.
     
-
+![IMG-20260312-100904.png](/img/user/IMG-20260312-100904.png)
 ### 2. Certificates or Tokens
 
 This category moves away from human memory and relies on **"Something you have."** Because humans are terrible at creating and remembering strong passwords, these systems use cryptography and physical possession to prove identity.
@@ -1002,7 +1000,7 @@ This is the most advanced form of authentication, relying on **"Something you ar
 
 ---
 
-**What is Certificate based auth. Expand on the working of with an example of a client connecting to an https server using SSL/TLS
+## 2. **What is Certificate based auth. Expand on the working of with an example of a client connecting to an https server using SSL/TLS
 ### What is Certificate-Based Authentication?
 
 **Certificate-Based Authentication** is a method of verifying identity using a digital file (a certificate) instead of a password.
@@ -1068,7 +1066,7 @@ Here is exactly how the client (your browser) uses certificate-based authenticat
 
 ---
 
-Explain the working of symmetric key cryptography
+## 3.Explain the working of symmetric key cryptography
 ### What is Symmetric Key Cryptography?
 
 **Symmetric Key Cryptography** (also known as secret-key cryptography) is the oldest and most straightforward method of encrypting data.
@@ -1125,10 +1123,10 @@ If Alice and Bob are on opposite sides of the world, how does Alice securely get
 ---
 
 AVAILABILITY RISKS WITH STORAGE INFRA
-
+Refer Availability risks with Cloud in UNIT 4
 
 ---
-DATABASE SECURITY
+## 4.DATABASE SECURITY
 
 Database security refers to the collective measures, tools, and protocols designed to protect a database from unauthorized access, malicious attacks, and accidental corruption. Since databases often store an organization’s most sensitive information—such as customer records, financial data, and intellectual property—securing them is a critical component of any cybersecurity strategy.
 
@@ -1148,7 +1146,7 @@ Effective database security follows the principle of **Defense in Depth**, layer
 
 ---
 
-Client-server Architecture
+## 5.Client-server Architecture
 
 In database systems, the **Client–Server architecture** is a distributed computing model that divides tasks between two main types of entities: the **Client** (the requester) and the **Server** (the provider).
 
@@ -1170,6 +1168,8 @@ Database designs are usually categorized by how many layers sit between the user
 
 ### **A. Two-Tier Architecture (Client-Server)**
 
+![IMG-20260312-110822.png](/img/user/IMG-20260312-110822.png)
+
 The client communicates **directly** with the database server.
 
 - **Fat Client:** The client machine does most of the "thinking" (business logic) and only asks the server for raw data.
@@ -1177,6 +1177,8 @@ The client communicates **directly** with the database server.
 - *Best for:* Small-scale applications or internal tools where security and speed are prioritized over serving thousands of users.
 
 ### **B. Three-Tier Architecture (Web-based)**
+
+![IMG-20260312-110800.png](/img/user/IMG-20260312-110800.png)
 
 This adds a middle layer—the **Application Server**—between the client and the database.
 
@@ -1187,7 +1189,7 @@ This adds a middle layer—the **Application Server**—between the client and t
 
 ---
 
-What is Authorization & What is RBAC
+## 6.What is Authorization & What is RBAC
 
 In the context of database and application security, **Authorization** is the process of determining what an authenticated user is allowed to do. While **Authentication** verifies *who* you are (e.g., via a password), **Authorization** determines *what* permissions you have once you are inside the system.
 
@@ -1229,7 +1231,7 @@ Authorization happens after a user is successfully identified. It acts as a gate
 
 ---
 
-Explain how database monitoring helps in identifying potential security issues.
+## 7.Explain how database monitoring helps in identifying potential security issues.
 
 ### **1. Detection of Permission Overstepping**
 
@@ -1317,7 +1319,7 @@ With Txn Log backups (e.g., every 15 minutes), you can restore the 12:00 AM back
 
 In "Full Recovery" mode, the database will never delete old logs on its own because it assumes you want them for a backup. If you don't take Txn Log backups, the log file will grow until it fills your entire hard drive, causing the database to stop working. Taking a backup is the only "healthy" way to shrink it.
 
-### **Difference Between Backup Creation Objectives and Recovery Objectives**
+## 8.**Difference Between Backup Creation Objectives and Recovery Objectives**
 
 | **Aspect** | **Backup Creation Objectives** | **Recovery Objectives** |
 | --- | --- | --- |
@@ -1369,7 +1371,7 @@ Running heavy analytical queries on OLTP systems can degrade performance; hence,
 
 ---
 
-DB SECURITY LAYERS
+## 9.DB SECURITY LAYERS
 
 ### **1. Server-Level Security**
 
@@ -1413,7 +1415,7 @@ The database is an application running on an **Operating System (OS)** like Linu
 
 ---
 
-Explain What is Object Level Security In databases and explain the below Objects used for DB security
+## 10.Explain What is Object Level Security In databases and explain the below Objects used for DB security
 Views
 Stored Procedures
 Triggers
@@ -1444,7 +1446,7 @@ A **Trigger** is a specialized piece of code that automatically "fires" or execu
 
 ---
 
-Using Application Security
+## 11.Using Application Security
 
 Application Security = One database login for the entire app, security rules enforced in application code
 
@@ -1469,9 +1471,61 @@ The text uses a **Web-based Bookstore** (like Amazon) to illustrate this concept
     - **Staff:** The application recognizes their internal credentials and grants them the ability to modify book costs and prices.
 3. **The Database View:** Throughout all these different interactions, the **Database Server** only ever sees one login: the **Web Server account**. It doesn't know about the individual customers or staff members; it simply fulfills the queries sent by the bookstore application.
 
+Here are the primary limitations of relying solely on Application-Level Security:
+
+### 1. The "Single Point of Failure" (One Key to the Kingdom)
+
+Since the application uses a single powerful login (service account), a single vulnerability like **SQL Injection** or a **Remote Code Execution (RCE)** exploit gives an attacker the same level of access as the application itself.
+
+- **The Risk:** If the app can delete all users, an attacker who compromises the app can delete all users. There is no second layer of defense at the database level to say "No, this specific request shouldn't be allowed."
+    
+
+### 2. "Forgotten WHERE Clause" (Developer Error)
+
+In this model, security is **explicitly** enforced by the developer in every single query.
+
+- **The Risk:** If a developer writes `SELECT * FROM orders` but forgets the `WHERE user_id = ?` filter, the application will leak every order in the database to the current user. This is a very common cause of **Broken Object Level Authorization (BOLA)**, a top OWASP security risk.
+    
+
+### 3. Lack of Audit Visibility
+
+Because the database sees only one user (the application service account), the database logs are effectively useless for forensic investigation.
+
+- **The Risk:** If data is stolen, the database logs will show that the `app_user` accessed the data at 2:00 AM. It won't tell you **which** end-user (e.g., `monil@example.com`) was responsible. You have to hope your application-level logs are perfect to reconstruct the timeline.
+    
+
+### 4. Over-Privileged Ad-Hoc Access
+
+Developers, DBAs, and reporting tools (like Metabase or Tableau) often connect to the database using the same high-level credentials.
+
+- **The Risk:** A junior developer running an ad-hoc query to "check some data" could accidentally run a `DELETE` or `UPDATE` on the entire production table because the database doesn't restrict their specific connection to "Read-Only" or "Own-Rows-Only."
+    
+
+### 5. Bypass via Direct Access
+
+Application-level rules only exist inside the code.
+
+- **The Risk:** If an attacker finds an alternative path to the database (e.g., an exposed port, a leaked backup file, or an unpatched management tool like pgAdmin), your application-level security rules simply **do not exist** to stop them.
+
+### **Comparison: Application vs. Database Security**
+
+|**Feature**|**Application Security (One Login)**|**Database Security (Granular/RLS)**|
+|---|---|---|
+|**Trust Model**|The DB trusts the Application server completely.|The DB trusts only the individual authenticated user.|
+|**DB Connection**|Uses a **Connection Pool** with one service account.|Often involves **Impersonation** or individual logins.|
+|**Logic Location**|Enforced in code (e.g., `WHERE user_id = ?`).|Enforced in schema (e.g., **Row Level Security**).|
+|**Data Access**|App code must filter data; risk of "forgetting a WHERE clause."|DB automatically filters data; unauthorized rows aren't even returned.|
+|**Ad-hoc Access**|A developer with the DB credentials can see **everything**.|Even with DB access, a user only sees their own authorized rows.|
+|**Complexity**|Easier for developers to write and manage.|Higher complexity in DB schema and user management.|
+|**Performance**|High (connection pooling is efficient).|Potential overhead due to per-query policy evaluation.|
+|**Consistency**|Risk of "leaks" if multiple apps use the same DB differently.|Guaranteed consistency across all apps/tools using the DB.|
+
 ---
 
-Database Backup and Recovery
+### **Which one should you choose?**
+---
+
+## 12.Database Backup and Recovery
 
 ## **1. Role of Backups in Database Security**
 
