@@ -4,7 +4,7 @@
 
 # UNIT 1
 
-1.IMPORTANCE OF INFOSEC
+## 1.IMPORTANCE OF INFOSEC
 
 Information is a company's most important asset, differentiating successful businesses and providing competitive leverage. To protect this asset, organizations implement a formal **information classification and handling policy**—a vital component of overall security policy.
 
@@ -60,6 +60,84 @@ Ultimately, strong security controls build **mutual trust**, allowing organizati
 
 ---
 
+What are ROI and ALE and how are they computed
+
+In Information Security, **ALE** and **ROI** are fundamental metrics used in **Quantitative Risk Assessment**. Security leaders use these mathematical formulas to justify their budgets to executives by proving that a security tool will save the company more money than it costs to buy.
+
+Here is a breakdown of what they are and exactly how they are computed.
+
+### 1. ALE (Annualized Loss Expectancy)
+
+**What it is:** ALE is a financial metric that predicts exactly how much money a company expects to lose to a specific threat (like a server crash, a fire, or a data breach) in a single year if they do absolutely nothing to protect against it.
+
+**How it is computed:**
+
+To calculate the ALE, you first need to calculate the **Single Loss Expectancy (SLE)**. This requires knowing the total value of the asset and how much of it would be destroyed in a single incident (the Exposure Factor).
+
+$$SLE = \text{Asset Value} \times \text{Exposure Factor}$$
+
+Once you know how much a single incident costs, you multiply it by the **Annualized Rate of Occurrence (ARO)**—which is how many times you expect the incident to happen in one year.
+
+$$ALE = SLE \times ARO$$
+
+**A Real-World Example:**
+
+- **Asset Value:** A company has a database server worth $100,000.
+    
+- **Exposure Factor (EF):** If a ransomware attack occurs, the IT team estimates it will compromise 40% of the asset's value (data loss, downtime, recovery).
+    
+- **SLE Calculation:** $100,000 \times 0.40 = \$40,000$. (Every single time they get hit, it costs $40,000).
+    
+- **ARO:** Industry data shows this specific type of attack happens to companies of their size once every two years (an ARO of 0.5).
+    
+- **ALE Calculation:** $\$40,000 \times 0.5 = \$20,000$.
+    
+
+The company expects to lose **$20,000 per year** to ransomware.
+
+---
+
+### 2. ROI (Return on Investment) / ROSI
+
+**What it is:** In general business, ROI measures how much profit an investment generates. However, security tools (like firewalls or backup generators) do not generate profit; they prevent loss. Therefore, in InfoSec, this is often called **ROSI (Return on Security Investment)**. It proves whether the money saved by preventing a disaster is greater than the cost of buying the security tool.
+
+**How it is computed:**
+
+To compute InfoSec ROI, you take the original ALE, subtract the new ALE (the expected loss _after_ you install the security tool), subtract the cost of the tool itself, and divide by the cost of the tool.
+
+$$ROI = \left( \frac{(\text{Original ALE} - \text{New ALE}) - \text{Cost of Control}}{\text{Cost of Control}} \right) \times 100$$
+
+**A Real-World Example:**
+
+Continuing the ransomware scenario above, the company's Original ALE is $20,000.
+
+- **The Control:** The CISO wants to buy a specialized Endpoint Detection and Response (EDR) software suite that costs **$5,000 a year**.
+    
+- **The New ALE:** The vendor guarantees the EDR will block 90% of ransomware, dropping the expected annual loss (New ALE) down to just **$2,000**.
+    
+
+Let's plug it into the formula:
+
+$$ROI = \left( \frac{(20000 - 2000) - 5000}{5000} \right) \times 100$$
+
+$$ROI = \left( \frac{18000 - 5000}{5000} \right) \times 100$$
+
+$$ROI = \left( \frac{13000}{5000} \right) \times 100$$
+
+$$ROI = 2.6 \times 100$$
+
+$$ROI = 260\%$$
+
+By spending $5,000 on the software, the company sees a **260% return on their security investment** through mitigated losses. If the ROI is ever a negative number, the security tool is too expensive and is not worth buying.
+
+---
+
+
+
+
+
+
+---
 ## **3.Why ROI and ALE Are Ineffective for Security Justification**
 
 Justifying investment in information security using **Return on Investment (ROI)** and **Annualized Loss Expectancy (ALE)** has proven to be ineffective due to the unique nature of security risks and benefits.
@@ -90,7 +168,7 @@ Many benefits of security—such as customer trust, brand reputation, regulatory
 
 ---
 
-4.Relationship b/w threats, security and Vulnerability
+## 4.Relationship b/w threats, security and Vulnerability
 
 ### . Threat (The Danger)
 
@@ -127,7 +205,9 @@ For a security breach or incident to successfully occur, **all three elements mu
 
 ## **5.Components of Building a Security Program**
 
-Building an effective security program requires a **systematic and well-structured approach** that defines authority, establishes policies, assesses risks, plans actions, executes controls, and ensures continuous improvement. Each component plays a critical role in ensuring that security objectives are achieved and sustained.
+In Information Security, a **Security Program** (often called an Information Security Program) is the comprehensive, overarching framework of people, processes, and technologies that an organization uses to protect its data and IT infrastructure.
+
+It is absolutely critical to understand that a security program is **not** a single software tool, a one-time IT project, or a specific firewall. It is a continuous, living system that evolves as the business grows and as new cyber threats emerge.
 
 ---
 
@@ -175,7 +255,7 @@ Maintenance ensures the long-term effectiveness of the security program. **Polic
 
 ---
 
-6.Justification: Why the Defender’s Job Is Harder Than the Attacker’s
+## 6.Justification: Why the Defender’s Job Is Harder Than the Attacker’s
 
 The attacker needs to exploit only one weakness in a system to succeed, whereas the defender must attempt to protect against all possible vulnerabilities. Since no system can be perfectly secure, achieving complete protection is practically impossible.
 
@@ -185,7 +265,7 @@ Since perfect security is impossible, defenders focus on **risk management** ins
 
 ---
 
-7.PRINCIPLE OF TRANSITIVE SECURITY
+## 7.PRINCIPLE OF TRANSITIVE SECURITY
 
 ## **Equivalent (Transitive) Security Principle**
 
@@ -207,7 +287,7 @@ Consider a building protected by biometric access, surveillance cameras, and str
 
 ---
 
-8.Concept of weakest link
+## 8.Concept of weakest link
 
 The concept of the **weakest link in security** states that the overall security of a system is only as strong as its **least secure component**. No matter how advanced or robust other security controls are, an attacker will always target the weakest point to gain unauthorized access. This weakest link could be a vulnerable system, an outdated software component, poor configuration, weak passwords, or even human behavior.
 
@@ -215,7 +295,7 @@ In many cases, **people** are considered the weakest link in security due to lac
 
 ---
 
-9.THREAT VECTOR
+## 9.THREAT VECTOR
 
 ### **What is a Threat Vector?**
 
@@ -251,7 +331,13 @@ Continuous monitoring, penetration testing, and red-team exercises help uncover 
 
 ---
 
-10.Lifecycle of Malicious Mobile Code
+## 10.Lifecycle of Malicious Mobile Code
+
+In Information Security, **Malicious Mobile Code** is a specific category of malware.
+
+Before defining the "malicious" part, it is crucial to clear up the most common misconception: **"Mobile code" has absolutely nothing to do with mobile phones or tablets.** Instead, "mobile code" refers to lightweight software scripts or programs that are transmitted across a network (like the internet) from a remote server and then downloaded and executed automatically on a local machine with little to no human intervention.
+
+When that code is intentionally designed to damage the system, steal data, or open a backdoor, it becomes **Malicious Mobile Code**.
 
 ### **1️⃣ Find**
 
@@ -277,7 +363,7 @@ In the final stage, the infected system is used to **search for new vulnerable t
 
 ---
 
-11.Email worms and their working
+## 11.Email worms and their working
 
 ## **Email Worms**
 
@@ -396,7 +482,7 @@ Advanced Trojans connect to a **command-and-control (C2) server**, allowing atta
 
 ---
 
-13.NETWORK LAYER ATTACKS
+## 13.NETWORK LAYER ATTACKS
 
 ## **Network Layer Attacks**
 
@@ -410,6 +496,40 @@ Common objectives of network layer attacks include:
 - Identity spoofing
 
 Examples of network layer attacks include **IP spoofing, packet sniffing, route poisoning, ICMP flooding, and man-in-the-middle attacks**.
+
+Types on NLA
+
+### 1. IP Spoofing
+
+- **What it is:** The attacker creates IP packets but modifies the "Source IP" header to make it look like the packet is coming from a different, trusted computer.
+    
+- **How it works:** Imagine sending a physical letter but writing your neighbor's return address on the envelope. When the receiving server gets the packet, it thinks it is communicating with a trusted internal machine and might grant access to restricted resources.
+    
+- **The Goal:** To bypass IP-based firewalls and authentication systems, or to hide the attacker's true identity during a larger cyberattack.
+    
+
+### 2. ICMP Floods (Smurf Attack)
+
+- **What it is:** A massive Distributed Denial of Service (DDoS) attack that overwhelms a victim's network with "ping" requests.
+    
+- **How it works:** The attacker uses IP Spoofing to change their source IP to the victim's IP address. They then send an ICMP "Echo Request" (a ping) to a network broadcast address. The broadcast address forwards that ping to _every single device_ on that network. All of those devices immediately reply to the ping at the exact same time, sending their responses directly to the spoofed victim's IP address, instantly overwhelming and crashing the victim's server.
+    
+- **The Goal:** To completely take a server or network offline by exhausting its bandwidth.
+### 3. IP Fragmentation Attacks (Teardrop Attack)
+
+- **What it is:** An attack that exploits how the Network Layer breaks down and reassembles large packets of data.
+    
+- **How it works:** When a data packet is too large to travel across a network, Layer 3 fragments it into smaller pieces. Each piece is given an offset value so the receiving computer knows how to stitch them back together in the correct order. In a Teardrop attack, the hacker intentionally sends fragments with overlapping, mathematically impossible offset values. When the victim's operating system tries to reassemble them, it gets confused, panics, and crashes.
+    
+- **The Goal:** To crash the target's operating system (Denial of Service).
+
+### 5. Ping of Death
+
+- **What it is:** A legacy attack that sends a malformed or intentionally oversized ping packet.
+    
+- **How it works:** The maximum legal size of an IP packet is 65,535 bytes. An attacker fragments an ICMP packet so that when the target machine reassembles it, the total size exceeds that 65,535-byte limit. Older operating systems did not know how to handle this buffer overflow and would instantly freeze or reboot. (Most modern systems are patched against this, but it remains a foundational concept in InfoSec).
+    
+- **The Goal:** To crash the target machine.
 
 ---
 
@@ -470,7 +590,7 @@ Packet sniffing can be **legitimate** when used by network administrators for tr
 
 ---
 
-**14.Protocol Anomaly Attack** is a type of network attack in which an attacker **exploits weaknesses, ambiguities, or improper handling of standard network protocols** by sending **malformed, unexpected, or non-standard packets**. These packets technically violate protocol specifications or use them in unusual ways, causing network devices or systems to behave incorrectly.
+ **14.Protocol Anomaly Attack** is a type of network attack in which an attacker **exploits weaknesses, ambiguities, or improper handling of standard network protocols** by sending **malformed, unexpected, or non-standard packets**. These packets technically violate protocol specifications or use them in unusual ways, causing network devices or systems to behave incorrectly.
 
 Such attacks take advantage of the fact that many systems do not strictly validate protocol behavior and may crash, hang, or become unstable when they encounter abnormal protocol usage.
 
