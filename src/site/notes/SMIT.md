@@ -2231,7 +2231,7 @@ Here is a direct comparison between Event Management and Incident Management to 
 ---
 ## 14. Explain Access Management in Service Operation. How does it ensure security, compliance, and controlled service usage in modern IT environments.
 
-A**ccess Management** is the IT process responsible for granting authorized users the right to use a service while strictly preventing access to non-authorized users.
+**Access Management** is the IT process responsible for granting authorized users the right to use a service while strictly preventing access to non-authorized users.
 
 Here is how it ensures security, compliance, and controlled service usage:
 
@@ -2241,12 +2241,12 @@ Here is how it ensures security, compliance, and controlled service usage:
     
 - **Lifecycle Access Control:** It ensures controlled usage by actively managing a user's digital identity from onboarding to offboarding, meaning privileges are dynamically updated when someone changes departments and immediately revoked the moment they leave the company.
     
-- **Standardized Role Profiles:** It integrates seamlessly with the Request Fulfilment process to provide pre-approved access templates for different job roles, allowing businesses to grant system access quickly and safely without needing to invent new security rules for every new hire.
+- **Standardized Roles Profiles:** It integrates seamlessly with the Request Fulfilment process to provide pre-approved access templates for different job roles, allowing businesses to grant system access quickly and safely without needing to invent new security rules for every new hire.
     
 - **Modern Security Enforcement:** It adapts to modern, cloud-based IT environments by enforcing advanced security measures like Multi-Factor Authentication (MFA) and Single Sign-On (SSO), ensuring that access remains secure even when employees are working remotely or across distributed networks.
 ---
 
-## 15.  Explain the major risks associated with Service Operation.How can these risks affect business continuity, regulatory compliance, and organizational reputation?
+## 15.  Explain the major risks associated with poor Service Operation. How can these risks affect business continuity, regulatory compliance, and organizational reputation?
 
 Here are the major risks associated with Service Operation and how they impact the organization:
 
@@ -2260,8 +2260,6 @@ Here are the major risks associated with Service Operation and how they impact t
     
 - **Consistent SLA Failures:** Repeatedly failing to meet agreed-upon service levels and poorly communicating with end-users during crises permanently damages the IT department's organizational reputation and destroys customer trust.
     
-
-**Would you like me to explain how to create a Risk Register to actively track and mitigate these specific operational vulnerabilities?**
 
 ---
 
