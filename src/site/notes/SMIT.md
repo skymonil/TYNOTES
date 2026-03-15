@@ -10,8 +10,8 @@ dg-publish: true
 
 
 
-
-1.Define IT Service Management (ITSM). Explain how ITSM enables value creation using an example of an Indian food delivery platform like Zomatoss
+# UNIT 1
+## 1.Define IT Service Management (ITSM). Explain how ITSM enables value creation using an example of an Indian food delivery platform like Zomatoss
 
 ## **Definition of IT Service Management (ITSM)**
 
@@ -95,9 +95,7 @@ Better app performance, faster deliveries, and competitive advantage.
 
 ---
 
-2.
-
-Explain “Specialization & Coordination” in ITSM with a real-life
+## 2.Explain “Specialization & Coordination” in ITSM with a real-life
 Indian hospital scenario
 
 ## **Specialization & Coordination in IT Service Management (ITSM)**
@@ -146,9 +144,7 @@ Through ITSM **Incident Management**, these teams coordinate their efforts, shar
 
 ---
 
-3.
-
-Describe the Agency Principle in ITSM with an example of TCS
+## 3.Describe the Agency Principle in ITSM with an example of TCS
 providing services to SBI Bank.
 
 ## **Agency Principle in IT Service Management (ITSM)**
@@ -195,9 +191,7 @@ ITSM practices help manage the agency relationship through:
 
 ---
 
-4.
-
-Explain Encapsulation in ITSM using UPI payment systems as an example
+## 4.Explain Encapsulation in ITSM using UPI payment systems as an example
 
 ## **Encapsulation in IT Service Management (ITSM)**
 
@@ -243,9 +237,7 @@ IT teams managing UPI systems handle infrastructure, security, availability, and
 
 ---
 
-5.
-
-Explain Systems Thinking in ITSM using the example of IRCTC
+## 5.Explain Systems Thinking in ITSM using the example of IRCTC
 ticket booking during festival season.
 
 ## **Systems Thinking in IT Service Management (ITSM)**
@@ -287,7 +279,7 @@ Systems thinking ensures that **capacity planning, performance management, chang
 
 ---
 
-6.
+## 6. What is a Service? Differentiate between services and products with an Indian IT example.
 
 A **service** is a means of **delivering value to customers** by facilitating outcomes that customers want to achieve **without the customer having to manage specific costs and risks**.
 
@@ -339,9 +331,7 @@ An Indian bank using **TCS-managed core banking services** gets reliable banking
 
 ---
 
-7. 
-
-Explain Business Processes using an airline ticket booking example (IndiGo/Air India).
+## 7. Explain Business Processes using an airline ticket booking example (IndiGo/Air India).
 
 ## **Business Processes**
 
@@ -384,9 +374,7 @@ The airline ticket booking process demonstrates how multiple steps work together
 
 ---
 
-8.
-
-Describe Functions vs Processes using the Service Desk of Infosys as an example.
+## 8.Describe Functions vs Processes using the Service Desk of Infosys as an example.
 
 ## **Functions vs Processes in ITSM**
 
@@ -444,9 +432,7 @@ The Service Desk **executes multiple processes**, such as:
 
 ---
 
-9.
-
-Explain Value (Utility + Warranty) using the example of Jio
+## 9.Explain Value (Utility + Warranty) using the example of Jio
 Cloud Backup
 
 ## **Value in ITSM (Utility + Warranty)**
@@ -506,11 +492,7 @@ Jio Cloud Backup also ensures:
 
 Only when **both utility and warranty are present**, true value is delivered.
 
-10.
-
-Explain Value Creation in Service Strategy. How does Utility
-and Warranty combine to create value? Give an example from
-Indian telecom industry (Jio/Airtel)
+## 10.Explain Value Creation in Service Strategy. How does Utility and Warranty combine to create value? Give an example from Indian telecom industry (Jio/Airtel)
 
 ## **Value Creation in Service Strategy**
 
@@ -1681,7 +1663,7 @@ The human cost of poor Service Transition is often the most destructive to long-
 
 ---
 
-## UNIT 3 SERVICE OPERATION
+# UNIT 3 SERVICE OPERATION
 
 ## 1.Explain the fundamentals of Service Operation. How does Service Operation ensure stability, efficiency, and value delivery in IT services
 
@@ -2263,7 +2245,7 @@ Here are the major risks associated with Service Operation and how they impact t
 
 ---
 
-UNIT 4
+# UNIT 4
 
 Master Answer for Q1 to Q5
 
