@@ -582,7 +582,11 @@ Every device in a VLAN receives every single broadcast frame (like ARP requests)
 Out of the box, every port on a brand new switch belongs to the default VLAN (VLAN 1).
 
 - **The Practice:** Never use VLAN 1 for user data, management traffic, or the Native VLAN on trunk links. Create a dedicated "Management VLAN" (e.g., VLAN 99) strictly for accessing the switches via SSH, and set an unused, isolated VLAN as the "Native" untagged VLAN on all trunks.
-    
+
+
+The Risk:** Since every port is in VLAN 1 by default, an attacker can easily plug into any empty port and attempt to access the switch's management interface (Telnet/SSH/HTTP). This makes the switch vulnerable to "VLAN Hopping" and unauthorized access.
+
+- **The Fix:** You should create a unique, dedicated **Management VLAN** (e.g., VLAN 99) that is not used by any end-user devices. This isolates the management traffic from regular user traffic.
 - **The Value:** Leaving everything on VLAN 1 is a massive security risk. Moving management traffic to its own VLAN ensures that if a user's machine gets infected with malware, the malware cannot scan the local network and attempt to log into the core network infrastructure.
     
 
@@ -2077,6 +2081,8 @@ Enterprises have certain servers that the public _must_ be able to access, such 
 
 By placing these public-facing servers in the DMZ, you isolate them. If a hacker breaches the web server in the DMZ, they are still trapped there and blocked from reaching the internal corporate network by another layer of security.
 
+![IMG-20260318-053529.png](/img/user/IMG-20260318-053529.png)
+
 ---
 
 ### DMZ Connectivity Types (Architectures)
@@ -2084,6 +2090,8 @@ By placing these public-facing servers in the DMZ, you isolate them. If a hacker
 To build a DMZ, network engineers generally use one of two primary firewall architectures.
 
 ### 1. Single Firewall Architecture (The "Three-Legged" Model)
+
+![IMG-20260318-053706.png](/img/user/IMG-20260318-053706.png)
 
 In this setup, a single enterprise firewall is used to manage all traffic. The firewall must have at least three physical or virtual network interfaces.
 
@@ -2099,6 +2107,8 @@ In this setup, a single enterprise firewall is used to manage all traffic. The f
     
 
 ### 2. Dual Firewall Architecture (The "Back-to-Back" Model)
+
+![IMG-20260318-053853.png](/img/user/IMG-20260318-053853.png)
 
 This is the gold standard for enterprise security. It uses two completely separate firewalls to create a highly secure "sandwich" around the DMZ servers.
 
@@ -2154,6 +2164,7 @@ Regardless of size, every enterprise branch requires four fundamental blocks to 
 To make deployments easily repeatable, enterprises classify branches into specific "profiles" based on size and user count.
 
 #### The Small Branch (SOHO / Retail)
+![IMG-20260318-055606.png](/img/user/IMG-20260318-055606.png)
 
 - **Users:** 1 to 50
     
